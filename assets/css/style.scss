@@ -1,0 +1,386 @@
+---
+---
+/* ==========================================================================
+   Corpus — design tokens
+   Palette: warm manuscript paper + CSB/SJU navy + a muted vellum gold,
+   quietly nodding to the Benedictine/scriptorium setting without leaning on
+   it. Documentation-site structure: persistent sidebar nav, generous
+   whitespace, clear heading hierarchy.
+   ========================================================================== */
+
+:root {
+  /* Color -------------------------------------------------------------- */
+  --color-bg:         #FBFAF7; /* warm paper, not the generic AI-cream */
+  --color-surface:    #FFFFFF;
+  --color-margin:     #F3EFE5; /* deeper paper tone for the marginalia rail */
+  --color-ink:        #23262B; /* primary text, warm charcoal not pure black */
+  --color-muted:      #6B6F76; /* secondary text, captions, metadata */
+  --color-navy:       #263959; /* CSB/SJU navy — primary accent */
+  --color-navy-deep:  #182338; /* hover/active states */
+  --color-gold:       #A9812F; /* muted vellum gold — secondary accent */
+  --color-rule:       #DEDBD2; /* hairline borders */
+  --color-rule-soft:  #EDEBE4;
+
+  /* Type ----------------------------------------------------------------
+     Display/headings: Fraunces — a serif with old-style, manuscript
+     character, used with restraint (weight/optical size only, no italics
+     everywhere).
+     Body: Source Serif 4 — readable long-form serif for skill content.
+     Utility: Inter — nav, labels, tags, metadata chips.
+  ------------------------------------------------------------------------ */
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-body:    "Source Serif 4", ui-serif, Georgia, serif;
+  --font-ui:      "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --measure: 42rem;      /* comfortable reading line length */
+  --sidebar-width: 15.5rem;
+  --margin-rail-width: 13rem; /* the marginalia column on skill pages */
+  --radius: 3px;          /* minimal rounding — documentation, not app UI */
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--color-navy);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+a:hover { color: var(--color-navy-deep); }
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-ink);
+}
+h1 { font-size: 2.5rem; letter-spacing: -0.01em; }
+
+.home-tagline {
+  font-family: var(--font-ui);
+  font-size: 1.05rem;
+  color: var(--color-muted);
+  margin: 0.4rem 0 0;
+}
+
+/* Section headings inside skill/page bodies (Definition, Learning Outcome,
+   etc.) get a quieter, italic treatment with a pilcrow marker — reads as
+   a labeled section of a standard template, not a generic bold subhead.
+   This is the one place numbering-like markers earn their keep here: the
+   template order is real and consistent across every skill page. */
+h2 {
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--color-navy);
+  margin-top: 2.75em;
+}
+h2::before {
+  content: "\00B6\00A0";
+  color: var(--color-gold);
+  font-style: normal;
+}
+h3 { font-size: 1.15rem; margin-top: 2em; }
+
+code, pre {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+  font-size: 0.9em;
+}
+pre {
+  background: var(--color-surface);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius);
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+/* Layout shell --------------------------------------------------------- */
+.site {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+.sidebar {
+  border-right: 1px solid var(--color-rule);
+  padding: 2rem 1.5rem;
+  font-family: var(--font-ui);
+}
+
+.sidebar__brand {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  margin-bottom: 0.15rem;
+  text-decoration: none;
+}
+.sidebar__tagline {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  margin: 0 0 1.75rem;
+  padding: 0;
+}
+.sidebar nav .nav-section-label {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  color: var(--color-navy);
+  margin: 0 0 0.6rem;
+}
+.sidebar nav ul + .nav-section-label {
+  margin-top: 0.25rem;
+}
+.sidebar nav a {
+  display: block;
+  padding: 0.3rem 0;
+  color: var(--color-ink);
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-left: 2px solid transparent;
+  padding-left: 0.6rem;
+  margin-left: -0.6rem;
+}
+.sidebar nav a:hover {
+  color: var(--color-navy);
+}
+.sidebar nav a.is-active {
+  color: var(--color-navy);
+  border-left-color: var(--color-gold);
+  background: var(--color-margin);
+  font-weight: 600;
+}
+.sidebar nav a.nav-overview-link {
+  font-style: italic;
+  color: var(--color-muted);
+  padding-bottom: 0.55rem;
+  margin-bottom: 0.3rem;
+  border-bottom: 1px solid var(--color-rule);
+}
+.sidebar nav a.nav-overview-link:hover {
+  color: var(--color-navy);
+}
+.sidebar nav a.nav-overview-link.is-active {
+  color: var(--color-navy);
+  font-style: italic;
+}
+
+.content {
+  padding: 3rem 3rem 6rem;
+  max-width: calc(var(--measure) + var(--margin-rail-width) + 6rem);
+}
+
+.content__inner { max-width: var(--measure); }
+/* Skill pages use the full .content width to fit the marginalia rail;
+   the reading column itself is still capped via .skill-body below. */
+.content__inner--wide { max-width: none; }
+
+.eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-navy);
+  margin-bottom: 0.5rem;
+}
+
+.rule {
+  border: none;
+  border-top: 2px solid var(--color-navy);
+  width: 3rem;
+  margin: 1rem 0 2rem;
+}
+
+/* Metadata chips — fallback presentation for narrow viewports, and for
+   pages that don't use the marginalia rail (index/listing pages). ------ */
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-family: var(--font-ui);
+  margin: 1.5rem 0 2.5rem;
+}
+.chip {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-rule);
+  color: var(--color-muted);
+  background: var(--color-surface);
+}
+.chip--navy {
+  border-color: var(--color-navy);
+  color: var(--color-navy);
+}
+.chip--gold {
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+}
+
+/* Signature element: the marginalia rail --------------------------------
+   Skill pages replace the generic "chips row under the title" pattern
+   with a vertical annotation column, echoing marginal notes in a
+   manuscript — Corpus's own namesake. It's the one place this site
+   spends its visual boldness; everything else stays quiet. Collapses to
+   a plain horizontal chip row (via .meta/.chip) on narrow viewports. */
+.skill-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--margin-rail-width);
+  gap: 3rem;
+  align-items: start;
+}
+
+.marginalia {
+  border-left: 1px solid var(--color-rule);
+  padding: 0.1rem 0 0.1rem 1.25rem;
+  font-family: var(--font-ui);
+}
+.marginalia__item {
+  margin-bottom: 1.5rem;
+}
+.marginalia__item:last-child { margin-bottom: 0; }
+.marginalia__label {
+  display: block;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--color-navy);
+  margin-bottom: 0.3rem;
+}
+.marginalia__value {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-ink);
+  line-height: 1.4;
+}
+.marginalia__value a {
+  color: var(--color-ink);
+}
+.marginalia__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.marginalia a.marginalia__companion {
+  color: var(--color-gold);
+  font-weight: 600;
+}
+.marginalia a.marginalia__source {
+  color: var(--color-muted);
+}
+
+@media (max-width: 64rem) {
+  .skill-layout { grid-template-columns: 1fr; }
+  .marginalia {
+    border-left: none;
+    border-top: 1px solid var(--color-rule);
+    padding: 1rem 0 0;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 2rem;
+  }
+  .marginalia__item { margin-bottom: 0; }
+}
+
+/* Signature element: a manuscript-style drop cap opening the Definition
+   section of every skill page — a quiet nod to Corpus's scriptorium
+   lineage, and functionally a wayfinding cue for "the content starts here"
+   right after the metadata block. Used once per page, nowhere else. */
+.skill-body {
+  max-width: var(--measure);
+}
+.skill-body > p:first-of-type::first-letter {
+  font-family: var(--font-display);
+  font-size: 3.4rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  float: left;
+  line-height: 0.8;
+  padding-right: 0.1em;
+  padding-top: 0.05em;
+}
+
+/* Skill/section index cards -------------------------------------------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+.card {
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.2rem;
+  background: var(--color-surface);
+  text-decoration: none;
+  color: var(--color-ink);
+  display: block;
+}
+.card:hover {
+  border-color: var(--color-navy);
+  background: var(--color-margin);
+}
+.card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+}
+.card p {
+  margin: 0;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+
+footer.site-footer {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  border-top: 1px solid var(--color-rule);
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+}
+
+/* Responsive: collapse sidebar above content on narrow viewports ------- */
+@media (max-width: 48rem) {
+  .site { grid-template-columns: 1fr; }
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid var(--color-rule);
+  }
+  .content { padding: 2rem 1.25rem 4rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}

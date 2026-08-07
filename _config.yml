@@ -1,0 +1,82 @@
+title: Corpus
+tagline: "Twenty-eight years of CS373: research, writing, and speaking skills for computer scientists"
+description: >
+  An archive of Human and AI Skills for technical research and communication,
+  built from Mike Heroux's CS373 (Senior Research Seminar) capstone course at
+  the College of St. Benedict and St. John's University.
+url: "https://collegeville.github.io"
+# This site is deployed as a project site at collegeville.github.io/Corpus/,
+# alongside (not replacing) the org's existing root homepage. All internal
+# links in this repo use the relative_url filter, so baseurl is the only
+# line that would need to change if that ever changes (e.g. to "" for a
+# root-site deployment).
+baseurl: "/Corpus"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+sass:
+  style: compressed
+
+permalink: /:categories/:title/
+
+# Collections -----------------------------------------------------------
+# human_skills  = timeless, durable techniques (7-part template)
+# ai_skills     = timely, tool-dependent companions, refreshed periodically
+collections:
+  human_skills:
+    output: true
+    permalink: /human-skills/:path/
+  ai_skills:
+    output: true
+    permalink: /ai-skills/:path/
+  about_corpus:
+    output: true
+    permalink: /about-corpus/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "human_skills"
+    values:
+      layout: "skill"
+      section: "Human Skills"
+  - scope:
+      path: ""
+      type: "ai_skills"
+    values:
+      layout: "skill"
+      section: "AI Skills"
+  - scope:
+      path: ""
+      type: "about_corpus"
+    values:
+      layout: "page"
+      section: "About Corpus"
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+
+# Top-level navigation, in display order
+nav:
+  - title: About Corpus
+    url: /about-corpus/
+  - title: Human Skills
+    url: /human-skills/
+  - title: AI Skills
+    url: /ai-skills/
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - scripts
+  - vendor

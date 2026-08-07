@@ -1,0 +1,57 @@
+---
+layout: default
+---
+<div class="eyebrow">{{ page.section }}{% if page.category %} · {{ page.category }}{% endif %}</div>
+<h1>{{ page.title }}</h1>
+<hr class="rule">
+
+<div class="skill-layout">
+  <div class="skill-body">
+    {{ content }}
+  </div>
+
+  <aside class="marginalia">
+    {% if page.category %}
+    <div class="marginalia__item">
+      <span class="marginalia__label">Category</span>
+      <span class="marginalia__value">{{ page.category }}</span>
+    </div>
+    {% endif %}
+
+    {% if page.tags %}
+    <div class="marginalia__item">
+      <span class="marginalia__label">Tags</span>
+      <span class="marginalia__value marginalia__tags">
+        {% for tag in page.tags %}<span class="chip">{{ tag }}</span>{% endfor %}
+      </span>
+    </div>
+    {% endif %}
+
+    {% if page.related_ai_skill %}
+      {% assign paired = site.ai_skills | where: "slug", page.related_ai_skill | first %}
+      {% if paired %}
+      <div class="marginalia__item">
+        <span class="marginalia__label">AI companion</span>
+        <span class="marginalia__value"><a class="marginalia__companion" href="{{ paired.url | relative_url }}">{{ paired.title }}</a></span>
+      </div>
+      {% endif %}
+    {% endif %}
+
+    {% if page.related_human_skill %}
+      {% assign paired = site.human_skills | where: "slug", page.related_human_skill | first %}
+      {% if paired %}
+      <div class="marginalia__item">
+        <span class="marginalia__label">Companion skill</span>
+        <span class="marginalia__value"><a class="marginalia__companion" href="{{ paired.url | relative_url }}">{{ paired.title }}</a></span>
+      </div>
+      {% endif %}
+    {% endif %}
+
+    {% if page.source %}
+    <div class="marginalia__item">
+      <span class="marginalia__label">Original source</span>
+      <span class="marginalia__value"><a class="marginalia__source" href="{{ page.source }}">View source ↗</a></span>
+    </div>
+    {% endif %}
+  </aside>
+</div>

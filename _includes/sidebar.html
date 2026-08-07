@@ -1,0 +1,33 @@
+<aside class="sidebar">
+  <a class="sidebar__brand" href="{{ '/' | relative_url }}">Corpus</a>
+  <span class="sidebar__tagline">{{ site.tagline }}</span>
+
+  <nav aria-label="Primary">
+    <span class="nav-section-label">About Corpus</span>
+    <ul>
+      <li><a href="{{ '/about-corpus/' | relative_url }}" class="nav-overview-link{% if page.section == 'About Corpus' and page.url == '/about-corpus/' %} is-active{% endif %}">Overview</a></li>
+      {% assign about_docs = site.about_corpus | sort: "order" %}
+      {% for doc in about_docs %}
+      <li><a href="{{ doc.url | relative_url }}" {% if page.url == doc.url %}class="is-active"{% endif %}>{{ doc.title }}</a></li>
+      {% endfor %}
+    </ul>
+
+    <span class="nav-section-label">Human Skills</span>
+    <ul>
+      <li><a href="{{ '/human-skills/' | relative_url }}" class="nav-overview-link{% if page.url == '/human-skills/' %} is-active{% endif %}">All Human Skills</a></li>
+      {% assign human_docs = site.human_skills | sort: "title" %}
+      {% for doc in human_docs %}
+      <li><a href="{{ doc.url | relative_url }}" {% if page.url == doc.url %}class="is-active"{% endif %}>{{ doc.title }}</a></li>
+      {% endfor %}
+    </ul>
+
+    <span class="nav-section-label">AI Skills</span>
+    <ul>
+      <li><a href="{{ '/ai-skills/' | relative_url }}" class="nav-overview-link{% if page.url == '/ai-skills/' %} is-active{% endif %}">All AI Skills</a></li>
+      {% assign ai_docs = site.ai_skills | sort: "title" %}
+      {% for doc in ai_docs %}
+      <li><a href="{{ doc.url | relative_url }}" {% if page.url == doc.url %}class="is-active"{% endif %}>{{ doc.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</aside>
