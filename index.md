@@ -15,12 +15,8 @@ wide: true
 <div class="skill-layout">
   <div class="skill-body">
     <p>
-    For twenty-eight years, Mike Heroux taught CS373, the Senior Research
-    Seminar capstone at the College of St. Benedict and St. John's
-    University, turning computer science majors into campus experts on a
-    topic of their choosing. Corpus preserves what that course taught
-    about doing and communicating research well &mdash; independent of
-    any one semester, tool, or assignment.
+    This Corpus website provides a consolidation and reorganization of a collection of research resources developed by Mike Heroux as part of the Computer Science Senior Research Seminar capstone at the College of St. Benedict and St. John's
+    University. Corpus preserves what that course taught about doing and communicating research well &mdash; independent of any one semester, tool, or assignment.
     </p>
 
     <p>The material is split into two kinds of knowledge, plus the
