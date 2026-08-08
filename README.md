@@ -23,7 +23,7 @@ Collaborator.
 Effective Reviews, Position Papers, Titles and Abstracts That Work, Using
 LaTeX, Predictions That Work, Retrospectives, Effective Mental Models,
 Discussions That Work, Presentations That Work, Better Technical Writing,
-Level of Expertise Dialogue, Knowledge Half-Life, Talks That Work,
+Level of Expertise Dialogue, Knowledge Half-Life, Slides That Work,
 Benchmarking a New Tool.
 
 *AI-Assisted Workflows (5):* AI-Assisted Reviewing, AI-Assisted Abstract
@@ -37,7 +37,7 @@ they're built.
 A few pages (`ReVeaL`, `Dialogue and Community`) were written from
 adjacent/related source material rather than a single dedicated source
 page, since no single page covered them directly — each notes what it
-draws from inline. `Knowledge Half-Life` and `Talks That Work` /
+draws from inline. `Knowledge Half-Life` and `Slides That Work` /
 `Presentations That Work` each exist in two cross-linked forms (About
 Corpus philosophy vs. Human Skill technique; two closely related but
 distinct techniques) — see each page for how the split works.
