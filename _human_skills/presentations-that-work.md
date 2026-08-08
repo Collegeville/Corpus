@@ -3,8 +3,9 @@ title: Presentations That Work
 category: Presenting
 tags: [presenting, public-speaking, slides]
 summary: A story-shaped structure for a technical talk that leaves the audience wanting the paper, not just the slides.
-related_human_skill: talks-that-work
+related_human_skill: slides-that-work
 source: https://collegeville.github.io/Orator/PresentationsThatWork/
+related_agent_skill: deck-and-delivery-review
 slug: presentations-that-work
 ---
 
