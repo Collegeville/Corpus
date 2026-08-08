@@ -11,10 +11,12 @@ tool" as the same kind of content ends up doing a disservice to both: the durabl
 buried under things that will be outdated within a year, and the timely material gets treated
 with more permanence than it deserves.
 
-So Corpus is split in two. **Human Skills** hold the material with a long half-life — techniques
-that don't meaningfully change even as the tools around them do. **AI Skills** hold the material
-with a short one — genuinely useful right now, explicitly labeled as needing periodic revisiting,
-rather than presented as settled fact.
+So Corpus is split in two by half-life. **Human Skills** hold the material with a long
+half-life — techniques that don't meaningfully change even as the tools around them do. The
+material with a short half-life — genuinely useful right now, explicitly labeled as needing
+periodic revisiting rather than presented as settled fact — comes in two forms: **AI-Assisted
+Workflows**, run by a human with an AI tool's help, and **Agent Skills**, downloadable files an
+agent runs directly.
 
 This is philosophy, not technique — the *why* behind the site's whole structure. The applied,
 practical version of the same idea — a set of questions for sizing up any specific thing you're

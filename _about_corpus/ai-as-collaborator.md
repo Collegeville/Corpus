@@ -32,7 +32,7 @@ hide. The incentive structure does the work that a stricter usage policy would o
 
 None of this stays fixed. Tools change, and so does the shared sense of what's appropriate. What
 should hold steady is the underlying commitment: you take responsibility for what you submit,
-you're honest about how you produced it, and you can speak to it yourself when asked. The AI
-Skill [AI Usage Policy Development Kit]({{ '/ai-skills/ai-usage-policy-development-kit/' | relative_url }}) is the
+you're honest about how you produced it, and you can speak to it yourself when asked. The AI-Assisted
+Workflow [AI Usage Policy Development Kit]({{ '/ai-workflows/ai-usage-policy-development-kit/' | relative_url }}) is the
 practical exercise built around that commitment — writing your own explicit policy, specific
 enough to actually follow, rather than a general intention to "be responsible about it."

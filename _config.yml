@@ -1,9 +1,10 @@
 title: Corpus
 tagline: "Twenty-eight years of CS373: research, writing, and speaking skills for computer scientists"
 description: >
-  An archive of Human and AI Skills for technical research and communication,
-  built from Mike Heroux's CS373 (Senior Research Seminar) capstone course at
-  the College of St. Benedict and St. John's University.
+  An archive of Human Skills, AI-Assisted Workflows, and Agent Skills for
+  technical research and communication, built from Mike Heroux's CS373
+  (Senior Research Seminar) capstone course at the College of St. Benedict
+  and St. John's University.
 url: "https://collegeville.github.io"
 # This site is deployed as a project site at collegeville.github.io/Corpus/,
 # alongside (not replacing) the org's existing root homepage. All internal
@@ -24,14 +25,20 @@ permalink: /:categories/:title/
 
 # Collections -----------------------------------------------------------
 # human_skills  = timeless, durable techniques (7-part template)
-# ai_skills     = timely, tool-dependent companions, refreshed periodically
+# ai_workflows  = timely, tool-dependent workflows a human follows with an
+#                 AI tool's help, refreshed periodically
+# agent_skills  = downloadable skill files handed to an agent, which then
+#                 does the work directly
 collections:
   human_skills:
     output: true
     permalink: /human-skills/:path/
-  ai_skills:
+  ai_workflows:
     output: true
-    permalink: /ai-skills/:path/
+    permalink: /ai-workflows/:path/
+  agent_skills:
+    output: true
+    permalink: /agent-skills/:path/
   about_corpus:
     output: true
     permalink: /about-corpus/:path/
@@ -45,10 +52,16 @@ defaults:
       section: "Human Skills"
   - scope:
       path: ""
-      type: "ai_skills"
+      type: "ai_workflows"
     values:
       layout: "skill"
-      section: "AI Skills"
+      section: "AI-Assisted Workflows"
+  - scope:
+      path: ""
+      type: "agent_skills"
+    values:
+      layout: "skill"
+      section: "Agent Skills"
   - scope:
       path: ""
       type: "about_corpus"
@@ -66,8 +79,10 @@ nav:
     url: /about-corpus/
   - title: Human Skills
     url: /human-skills/
-  - title: AI Skills
-    url: /ai-skills/
+  - title: AI-Assisted Workflows
+    url: /ai-workflows/
+  - title: Agent Skills
+    url: /agent-skills/
 
 plugins:
   - jekyll-feed

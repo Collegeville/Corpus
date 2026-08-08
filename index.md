@@ -19,21 +19,25 @@ wide: true
     University. Corpus preserves what that course taught about doing and communicating research well &mdash; independent of any one semester, tool, or assignment.
     </p>
 
-    <p>The material is split into two kinds of knowledge, plus the
+    <p>The material is split into three kinds of knowledge, plus the
     thinking behind that split:</p>
 
     <div class="card-grid">
       <a class="card" href="{{ '/about-corpus/' | relative_url }}">
         <h3>About Corpus</h3>
-        <p>Why the site exists, and the philosophy behind the Human/AI split.</p>
+        <p>Why the site exists, and the philosophy behind the split.</p>
       </a>
       <a class="card" href="{{ '/human-skills/' | relative_url }}">
         <h3>Human Skills</h3>
         <p>Timeless techniques for research, writing, and speaking that don't expire.</p>
       </a>
-      <a class="card" href="{{ '/ai-skills/' | relative_url }}">
-        <h3>AI Skills</h3>
-        <p>Timely, tool-dependent workflows, refreshed as the tools change.</p>
+      <a class="card" href="{{ '/ai-workflows/' | relative_url }}">
+        <h3>AI-Assisted Workflows</h3>
+        <p>Timely, tool-dependent workflows a human follows with an AI tool's help.</p>
+      </a>
+      <a class="card" href="{{ '/agent-skills/' | relative_url }}">
+        <h3>Agent Skills</h3>
+        <p>Downloadable skill files handed to an agent to do the work directly.</p>
       </a>
     </div>
   </div>
@@ -48,8 +52,12 @@ wide: true
       <span class="marginalia__value">{{ site.human_skills | size }}</span>
     </div>
     <div class="marginalia__item">
-      <span class="marginalia__label">AI Skills</span>
-      <span class="marginalia__value">{{ site.ai_skills | size }}</span>
+      <span class="marginalia__label">AI-Assisted Workflows</span>
+      <span class="marginalia__value">{{ site.ai_workflows | size }}</span>
+    </div>
+    <div class="marginalia__item">
+      <span class="marginalia__label">Agent Skills</span>
+      <span class="marginalia__value">{{ site.agent_skills | size }}</span>
     </div>
     <div class="marginalia__item">
       <span class="marginalia__label">About Corpus pages</span>

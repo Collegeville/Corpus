@@ -19,7 +19,7 @@ Corpus exists to pull that core out and give it a home that outlives the course 
 retiring from teaching CS373; a successor instructor is taking over, and she needed something more
 durable to build on than a personal website's file structure. Corpus is that something: an
 archive, organized so the timeless material (Human Skills) is clearly separated from the material
-that's genuinely tied to the current moment's tools (AI Skills) — see
+that's genuinely tied to the current moment's tools (AI-Assisted Workflows and Agent Skills) — see
 [Philosophy]({{ '/about-corpus/philosophy/' | relative_url }}) for why that split matters — with a visible path for
 future instructors, students, and contributors to keep adding to it after this handoff.
 

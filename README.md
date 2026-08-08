@@ -2,14 +2,18 @@
 
 An archive of Mike Heroux's CS373 (Senior Research Seminar) teaching material —
 College of St. Benedict / St. John's University — split into timeless **Human
-Skills** and timely, tool-dependent **AI Skills**, with an **About Corpus**
-section explaining the philosophy behind that split.
+Skills** and timely, tool-dependent material in two forms — **AI-Assisted
+Workflows** (a human follows these with an AI tool's help) and **Agent
+Skills** (downloadable files handed to an agent, which does the work
+directly) — with an **About Corpus** section explaining the philosophy
+behind that split.
 
 ## Status
 
 **The site is content-complete.** All 8 About Corpus pages, all 16 Human
-Skills, and all 5 AI Skills are fully written — site structure, navigation,
-styling, and content are all in place.
+Skills, all 5 AI-Assisted Workflows, and the first Agent Skill are fully
+written — site structure, navigation, styling, and content are all in
+place.
 
 *About Corpus:* Origins, Philosophy, A Tale of Three Students, Knowledge
 Half-Life, ReVeaL, Dialogue and Community, Self-Assessment, AI as
@@ -22,9 +26,13 @@ Discussions That Work, Presentations That Work, Better Technical Writing,
 Level of Expertise Dialogue, Knowledge Half-Life, Talks That Work,
 Benchmarking a New Tool.
 
-*AI Skills (5):* AI-Assisted Reviewing, AI-Assisted Abstract Drafting,
-Generative AI Tools, AI-Assisted Development Exercise, AI Usage Policy
-Development Kit.
+*AI-Assisted Workflows (5):* AI-Assisted Reviewing, AI-Assisted Abstract
+Drafting, Generative AI Tools, AI-Assisted Development Exercise, AI Usage
+Policy Development Kit.
+
+*Agent Skills (1):* Position Paper Grill — pairs with Position Papers.
+Intended to be the first of an ongoing collection; more will be added as
+they're built.
 
 A few pages (`ReVeaL`, `Dialogue and Community`) were written from
 adjacent/related source material rather than a single dedicated source
@@ -73,8 +81,8 @@ python3 scripts/audit.py
 ```
 
 It checks front matter validity, slug/URL collisions, that every
-`related_ai_skill` / `related_human_skill` cross-link actually resolves,
-that every internal link in page bodies is correctly wrapped with
+`related_ai_workflow` / `related_agent_skill` / `related_human_skill`
+cross-link actually resolves, that every internal link in page bodies is correctly wrapped with
 `relative_url` (so it respects `baseurl`) and points at a real page, and
 basic Liquid tag balance in layouts/includes. A clean run prints
 `ISSUES: 0`.
@@ -84,26 +92,31 @@ basic Liquid tag balance in layouts/includes. A clean run prints
 ```
 _config.yml          site config, nav, collection definitions
 _layouts/             default.html (shell), page.html (About Corpus pages),
-                       skill.html (Human/AI Skills pages)
+                       skill.html (Human Skills / AI-Assisted Workflows /
+                       Agent Skills pages — all three collections share it)
 _includes/             head.html, sidebar.html, footer.html
 assets/css/style.scss  design tokens + all site styling
-assets/examples/         functional resources a skill page depends on to work
-                          (e.g. assets/examples/latex/ — the Using LaTeX worked
-                          example), mirrored locally rather than linked out to
-                          an external repo so the page keeps working if that
-                          repo is later reorganized or removed
+assets/examples/         functional resources a Human Skill page depends on
+                          to work (e.g. assets/examples/latex/ — the Using
+                          LaTeX worked example), mirrored locally rather than
+                          linked out to an external repo so the page keeps
+                          working if that repo is later reorganized or removed
+assets/agent-skills/     downloadable SKILL.md files, one per Agent Skills
+                          entry (e.g. assets/agent-skills/position-paper-grill/)
 _about_corpus/          About Corpus section pages (collection)
 _human_skills/          Human Skills (collection)
-_ai_skills/              AI Skills (collection)
+_ai_workflows/           AI-Assisted Workflows (collection)
+_agent_skills/           Agent Skills (collection)
 about-corpus/index.md    About Corpus landing page
 human-skills/index.md    Human Skills landing page (auto-lists the collection)
-ai-skills/index.md       AI Skills landing page (auto-lists the collection)
+ai-workflows/index.md    AI-Assisted Workflows landing page (auto-lists the collection)
+agent-skills/index.md    Agent Skills landing page (auto-lists the collection)
 index.md                 site homepage
 ```
 
 Landing pages loop over their collection automatically — adding a new file to
-`_human_skills/` or `_ai_skills/` makes it show up in the nav sidebar and on
-the section's index page with no other edits required.
+`_human_skills/`, `_ai_workflows/`, or `_agent_skills/` makes it show up in
+the nav sidebar and on the section's index page with no other edits required.
 
 ## Adding a Human Skill
 
@@ -116,8 +129,10 @@ category: Writing        # Writing | Presenting | Research | Discussion | etc.
 tags: [tag-one, tag-two]
 summary: One sentence, shown on the index card and in <meta description>.
 source: https://maherou.github.io/Teaching/files/CS373/...   # optional
-related_ai_skill: my-ai-skill-slug                            # optional, must match
-                                                                 # an AI Skill's `slug`
+related_ai_workflow: my-workflow-slug                          # optional, must match
+                                                                 # an AI-Assisted Workflow's `slug`
+related_agent_skill: my-agent-skill-slug                       # optional, must match
+                                                                 # an Agent Skill's `slug`
 slug: my-skill                                                 # used for cross-linking
 ---
 ```
@@ -142,13 +157,45 @@ including how a merged-in secondary framework (the Good Topic Checklist)
 was folded into Core Structure as a distinct earlier stage rather than
 force-fit into the main flow.
 
-## Adding an AI Skill
+## Adding an AI-Assisted Workflow
 
-Same idea, in `_ai_skills/`, with `related_human_skill: <slug>` instead of
-`related_ai_skill` if it pairs with a Human Skill. AI Skill pages should
+Same idea, in `_ai_workflows/`, with `related_human_skill: <slug>` instead of
+`related_ai_workflow` if it pairs with a Human Skill. These pages should
 carry a visible "last verified" or "as of" note in the body once they have
 real content — these are explicitly expected to go stale and need
 periodic refreshing, unlike Human Skills.
+
+## Adding an Agent Skill
+
+Two things go in together: the collection entry and the downloadable file
+itself.
+
+1. Add the actual skill file at `assets/agent-skills/<slug>/SKILL.md`. This
+   is the file a person downloads and hands to an agent, so it needs to be
+   fully self-contained — any internal cross-reference to a Human Skill page
+   should be a full `https://collegeville.github.io/Corpus/...` URL, not a
+   repo-relative path, since the file no longer lives next to the repo once
+   it's downloaded.
+2. Add a collection entry in `_agent_skills/<slug>.md` describing what the
+   skill does and linking the download, with `related_human_skill: <slug>`
+   if it pairs with one:
+
+```yaml
+---
+title: My Agent Skill
+category: Writing
+tags: [tag-one, tag-two]
+summary: One sentence, shown on the index card and in <meta description>.
+related_human_skill: my-skill-slug   # optional, must match a Human Skill's `slug`
+slug: my-agent-skill                 # used for cross-linking
+---
+```
+
+See `_agent_skills/position-paper-grill.md` and
+`assets/agent-skills/position-paper-grill/SKILL.md` for a complete
+example, including how the human-facing description differs from the
+skill file itself (the description explains what the skill does and why;
+the skill file is the actual instructions handed to the agent).
 
 ## Adding an About Corpus section
 
@@ -162,8 +209,8 @@ index page. Layout and section label are applied automatically via
 Palette and type are defined as CSS custom properties at the top of
 `assets/css/style.scss` — change values there, not throughout the
 stylesheet. The palette leans on CSB/SJU navy as the primary accent and a
-muted vellum gold as a secondary accent (used for the "AI companion" /
-"Human Skill companion" cross-link chips), against a warm paper
+muted vellum gold as a secondary accent (used for the "AI-Assisted Workflow" /
+"Agent Skill" / "Companion skill" cross-link chips), against a warm paper
 background — a quiet, restrained nod to the Benedictine/manuscript
 setting rather than a literal one.
 

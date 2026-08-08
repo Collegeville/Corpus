@@ -27,11 +27,21 @@ layout: default
     </div>
     {% endif %}
 
-    {% if page.related_ai_skill %}
-      {% assign paired = site.ai_skills | where: "slug", page.related_ai_skill | first %}
+    {% if page.related_ai_workflow %}
+      {% assign paired = site.ai_workflows | where: "slug", page.related_ai_workflow | first %}
       {% if paired %}
       <div class="marginalia__item">
-        <span class="marginalia__label">AI companion</span>
+        <span class="marginalia__label">AI-assisted workflow</span>
+        <span class="marginalia__value"><a class="marginalia__companion" href="{{ paired.url | relative_url }}">{{ paired.title }}</a></span>
+      </div>
+      {% endif %}
+    {% endif %}
+
+    {% if page.related_agent_skill %}
+      {% assign paired = site.agent_skills | where: "slug", page.related_agent_skill | first %}
+      {% if paired %}
+      <div class="marginalia__item">
+        <span class="marginalia__label">Agent skill</span>
         <span class="marginalia__value"><a class="marginalia__companion" href="{{ paired.url | relative_url }}">{{ paired.title }}</a></span>
       </div>
       {% endif %}

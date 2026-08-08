@@ -21,11 +21,20 @@
       {% endfor %}
     </ul>
 
-    <span class="nav-section-label">AI Skills</span>
+    <span class="nav-section-label">AI-Assisted Workflows</span>
     <ul>
-      <li><a href="{{ '/ai-skills/' | relative_url }}" class="nav-overview-link{% if page.url == '/ai-skills/' %} is-active{% endif %}">All AI Skills</a></li>
-      {% assign ai_docs = site.ai_skills | sort: "title" %}
+      <li><a href="{{ '/ai-workflows/' | relative_url }}" class="nav-overview-link{% if page.url == '/ai-workflows/' %} is-active{% endif %}">All AI-Assisted Workflows</a></li>
+      {% assign ai_docs = site.ai_workflows | sort: "title" %}
       {% for doc in ai_docs %}
+      <li><a href="{{ doc.url | relative_url }}" {% if page.url == doc.url %}class="is-active"{% endif %}>{{ doc.title }}</a></li>
+      {% endfor %}
+    </ul>
+
+    <span class="nav-section-label">Agent Skills</span>
+    <ul>
+      <li><a href="{{ '/agent-skills/' | relative_url }}" class="nav-overview-link{% if page.url == '/agent-skills/' %} is-active{% endif %}">All Agent Skills</a></li>
+      {% assign agent_docs = site.agent_skills | sort: "title" %}
+      {% for doc in agent_docs %}
       <li><a href="{{ doc.url | relative_url }}" {% if page.url == doc.url %}class="is-active"{% endif %}>{{ doc.title }}</a></li>
       {% endfor %}
     </ul>

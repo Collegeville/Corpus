@@ -3,7 +3,7 @@ title: Benchmarking a New Tool
 category: Research
 tags: [tool-adoption, benchmarking, risk-reduction]
 summary: Before a new tool has to carry your real project, run it through a small, self-contained, checkable challenge first.
-related_ai_skill: ai-assisted-development-exercise
+related_ai_workflow: ai-assisted-development-exercise
 source: https://maherou.github.io/Teaching/files/CS373/AiAssistedDevelopment/
 slug: benchmarking-a-new-tool
 ---

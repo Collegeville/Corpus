@@ -3,7 +3,7 @@ title: Titles and Abstracts That Work
 category: Writing
 tags: [abstracts, titles, technical-writing]
 summary: Koopman's five-part abstract structure — motivation, problem, approach, results, conclusions — for writing an abstract that earns the rest of the read.
-related_ai_skill: ai-assisted-abstract-drafting
+related_ai_workflow: ai-assisted-abstract-drafting
 source: https://collegeville.github.io/Scribe/TitlesAndAbstractsThatWork/
 slug: titles-and-abstracts-that-work
 ---

@@ -3,7 +3,7 @@ title: Effective Reviews
 category: Discussion
 tags: [reviewing, feedback, critique]
 summary: A three-part structure for reviewing someone else's technical writing so the feedback actually helps them improve it.
-related_ai_skill: ai-assisted-reviewing
+related_ai_workflow: ai-assisted-reviewing
 source: https://maherou.github.io/Teaching/files/CS373/EffectiveReviews/
 slug: effective-reviews
 ---

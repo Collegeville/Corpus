@@ -4,6 +4,7 @@ category: Writing
 tags: [position-papers, whitepapers, persuasive-writing]
 summary: A tiered document structure for socializing and promoting an idea in an organization or community too large for everyone to read everything.
 source: https://collegeville.github.io/Scribe/PositionPapers/
+related_agent_skill: position-paper-grill
 slug: position-papers
 ---
 

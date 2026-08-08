@@ -1,6 +1,6 @@
 ---
 title: Philosophy
-summary: The thinking behind splitting the archive into timeless Human Skills and timely AI Skills.
+summary: The thinking behind splitting the archive into timeless Human Skills and timely, tool-dependent material.
 order: 2
 ---
 
@@ -9,8 +9,11 @@ Corpus is organized around one belief: some skills decay fast, and others barely
 result from this month's model." Treating both the same way — mixing durable technique with
 whatever tool happens to be current — makes the durable material harder to trust and the timely
 material harder to keep honest. So the site is split: **Human Skills** hold what stays true
-independent of any particular tool; **AI Skills** hold what's genuinely tied to the current
-moment, explicitly expected to need refreshing. (The practical version of this idea — how to size
+independent of any particular tool; the tool-dependent material, genuinely tied to the current
+moment and explicitly expected to need refreshing, comes in two forms — **AI-Assisted
+Workflows**, which a human follows themselves with an AI tool's help, and **Agent Skills**,
+downloadable files handed to an agent that does the work directly. (The practical version of
+this idea — how to size
 up any specific thing you're learning — lives as its own technique on
 [Knowledge Half-Life]({{ '/human-skills/knowledge-half-life/' | relative_url }}).)
 

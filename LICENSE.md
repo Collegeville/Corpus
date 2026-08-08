@@ -1,10 +1,10 @@
 Corpus — Content License
 =========================
 
-The written content of this site (the About Corpus pages, and the Human Skills
-and AI Skills pages, including their text, structure, and worked examples) is
-licensed under the Creative Commons Attribution 4.0 International License
-(CC BY 4.0).
+The written content of this site (the About Corpus pages, and the Human Skills,
+AI-Assisted Workflows, and Agent Skills pages, including their text, structure,
+downloadable skill files, and worked examples) is licensed under the Creative
+Commons Attribution 4.0 International License (CC BY 4.0).
 
 You are free to:
 
