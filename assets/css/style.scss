@@ -362,6 +362,39 @@ pre {
   line-height: 1.5;
 }
 
+/* Content tables (schedules, comparisons) -------------------------------
+   display: block + overflow-x: auto keeps a wide table (many columns, or
+   long cell text like the sample schedule) from ever forcing the whole
+   page to scroll horizontally on narrow viewports. */
+table {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0 2rem;
+  font-size: 0.95rem;
+}
+th, td {
+  text-align: left;
+  padding: 0.55rem 0.9rem;
+  border-bottom: 1px solid var(--color-rule);
+  vertical-align: top;
+}
+th {
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-navy);
+  background: var(--color-margin);
+  border-bottom: 2px solid var(--color-navy);
+  white-space: nowrap;
+}
+tbody tr:nth-child(even) {
+  background: var(--color-margin);
+}
+
 footer.site-footer {
   font-family: var(--font-ui);
   font-size: 0.8rem;
