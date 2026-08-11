@@ -38,5 +38,10 @@
       <li><a href="{{ doc.url | relative_url }}" {% if page.url == doc.url %}class="is-active"{% endif %}>{{ doc.title }}</a></li>
       {% endfor %}
     </ul>
+
+    <span class="nav-section-label">Sample Semester Schedule</span>
+    <ul>
+      <li><a href="{{ '/sample-semester-schedule/' | relative_url }}" class="nav-overview-link{% if page.section == 'Sample Semester Schedule' %} is-active{% endif %}">Spring 2026 Schedule</a></li>
+    </ul>
   </nav>
 </aside>

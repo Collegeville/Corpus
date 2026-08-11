@@ -39,6 +39,10 @@ wide: true
         <h3>Agent Skills</h3>
         <p>Downloadable skill files handed to an agent to do the work directly.</p>
       </a>
+      <a class="card" href="{{ '/sample-semester-schedule/' | relative_url }}">
+        <h3>Sample Semester Schedule</h3>
+        <p>A worked example: one semester's class meetings and assignment due dates, merged into a single schedule.</p>
+      </a>
     </div>
   </div>
 
