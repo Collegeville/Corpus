@@ -32,9 +32,14 @@ def parse_front_matter(path):
 # --- Collect all collection docs ------------------------------------------
 collections = {
     "human_skills": ROOT / "_human_skills",
-    "ai_skills": ROOT / "_ai_skills",
+    "ai_workflows": ROOT / "_ai_workflows",
+    "agent_skills": ROOT / "_agent_skills",
     "about_corpus": ROOT / "_about_corpus",
 }
+
+# Collections that follow the slug/category/tags/summary skill template
+# (about_corpus is title/summary/order instead, with no slug-based cross-linking).
+SKILL_COLLECTIONS = ("human_skills", "ai_workflows", "agent_skills")
 
 docs = {}          # coll_name -> {slug: (path, fm)}
 slug_index = {}     # slug -> [(coll_name, path)]  (for global collision check)
@@ -42,7 +47,8 @@ url_index = {}      # generated url -> [(coll_name, path)]
 
 PERMALINKS = {
     "human_skills": "/human-skills/{}/",
-    "ai_skills": "/ai-skills/{}/",
+    "ai_workflows": "/ai-workflows/{}/",
+    "agent_skills": "/agent-skills/{}/",
     "about_corpus": "/about-corpus/{}/",
 }
 
@@ -55,7 +61,7 @@ for coll, dirpath in collections.items():
         fm, body = parse_front_matter(f)
         slug = fm.get("slug")
         filename_base = f.stem
-        if coll in ("human_skills", "ai_skills") and not slug:
+        if coll in SKILL_COLLECTIONS and not slug:
             log_issue(f"{f}: missing required 'slug' front matter field")
         # Jekyll uses filename (not slug field) to build :path in permalink
         # unless a custom permalink is set — flag mismatch since our whole
@@ -68,7 +74,7 @@ for coll, dirpath in collections.items():
         for field in required_common:
             if field not in fm:
                 log_issue(f"{f}: missing required front matter field '{field}'")
-        if coll in ("human_skills", "ai_skills"):
+        if coll in SKILL_COLLECTIONS:
             for field in ["category", "tags", "summary"]:
                 if field not in fm:
                     log_warn(f"{f}: missing recommended field '{field}'")
@@ -87,31 +93,36 @@ for url, entries in url_index.items():
     if len(entries) > 1:
         log_issue(f"URL collision at {url}: {[str(p) for _, p in entries]}")
 
-# --- related_ai_skill / related_human_skill resolution ----------------------
-for coll in ("human_skills", "ai_skills"):
+# --- related_ai_workflow / related_agent_skill / related_human_skill resolution ---
+for coll in SKILL_COLLECTIONS:
     for filename_base, (f, fm, body) in docs[coll].items():
-        for field, target_coll in [("related_ai_skill", "ai_skills"), ("related_human_skill", "human_skills")]:
+        for field, target_coll in [
+            ("related_ai_workflow", "ai_workflows"),
+            ("related_agent_skill", "agent_skills"),
+            ("related_human_skill", "human_skills"),
+        ]:
             val = fm.get(field)
             if val and val not in docs[target_coll]:
                 log_issue(f"{f}: {field}: '{val}' does not match any slug/filename in {target_coll}")
 
-# --- Internal markdown links: /human-skills/x/, /ai-skills/x/, /about-corpus/x/ ---
+# --- Internal markdown links: /human-skills/x/, /ai-workflows/x/, /agent-skills/x/, /about-corpus/x/ ---
 # Matches both bare root-relative links (a bug, since they ignore baseurl) and
 # the correct Jekyll-relative_url-wrapped form.
-LINK_RE = re.compile(r"\((/(?:human-skills|ai-skills|about-corpus)/([a-z0-9\-]+)/)\)")
-LIQUID_LINK_RE = re.compile(r"\{\{\s*'(/(?:human-skills|ai-skills|about-corpus)/([a-z0-9\-]+)/)'\s*\|\s*relative_url\s*\}\}")
+LINK_RE = re.compile(r"\((/(?:human-skills|ai-workflows|agent-skills|about-corpus)/([a-z0-9\-]+)/)\)")
+LIQUID_LINK_RE = re.compile(r"\{\{\s*'(/(?:human-skills|ai-workflows|agent-skills|about-corpus)/([a-z0-9\-]+)/)'\s*\|\s*relative_url\s*\}\}")
 
 all_md_files = []
 for coll, dirpath in collections.items():
     all_md_files.extend(sorted(dirpath.glob("*.md")))
-for extra in ["index.md", "human-skills/index.md", "ai-skills/index.md", "about-corpus/index.md"]:
+for extra in ["index.md", "human-skills/index.md", "ai-workflows/index.md", "agent-skills/index.md", "about-corpus/index.md"]:
     p = ROOT / extra
     if p.exists():
         all_md_files.append(p)
 
 section_map = {
     "human-skills": "human_skills",
-    "ai-skills": "ai_skills",
+    "ai-workflows": "ai_workflows",
+    "agent-skills": "agent_skills",
     "about-corpus": "about_corpus",
 }
 
@@ -160,7 +171,7 @@ for pattern in ["_layouts/*.html", "_includes/*.html"]:
 cfg_path = ROOT / "_config.yml"
 try:
     cfg = yaml.safe_load(cfg_path.read_text(encoding="utf-8"))
-    for coll in ["human_skills", "ai_skills", "about_corpus"]:
+    for coll in ["human_skills", "ai_workflows", "agent_skills", "about_corpus"]:
         if coll not in cfg.get("collections", {}):
             log_issue(f"_config.yml: collection '{coll}' not declared")
 except yaml.YAMLError as e:
@@ -177,7 +188,8 @@ elif not scss.read_text(encoding="utf-8").startswith("---"):
     log_issue("assets/css/style.scss missing required '---' front matter (Jekyll won't process it as Sass without this)")
 
 # --- Report -------------------------------------------------------------
-print(f"\nDocs found: human_skills={len(docs['human_skills'])} ai_skills={len(docs['ai_skills'])} about_corpus={len(docs['about_corpus'])}")
+print(f"\nDocs found: human_skills={len(docs['human_skills'])} ai_workflows={len(docs['ai_workflows'])} "
+      f"agent_skills={len(docs['agent_skills'])} about_corpus={len(docs['about_corpus'])}")
 print(f"\n{'='*60}\nISSUES: {len(ISSUES)}\n{'='*60}")
 for i in ISSUES:
     print(f"  ✗ {i}")

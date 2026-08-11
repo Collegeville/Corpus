@@ -26,16 +26,6 @@ cross-links resolve, that internal links are wrapped in `relative_url`, and
 Liquid tag balance in layouts/includes. Run it before committing content
 changes. A clean run prints `ISSUES: 0`.
 
-**Known issue:** `scripts/audit.py` was written before the `_ai_skills`
-collection was split into `_ai_workflows` and `_agent_skills` (see git
-history — "Split AI Skills into workflows and agent skills"). Its internal
-`collections` dict and regexes still reference the old `ai_skills` /
-`_ai_skills` names and never look at `_agent_skills` at all, so it will
-report a false "Missing collection directory" for `_ai_skills` and silently
-skip validating Agent Skills entries and `/agent-skills/` links entirely.
-Treat its `ISSUES: 0` as incomplete until this is fixed to match
-`_config.yml`'s real collection names.
-
 ## Architecture
 
 **Collections and where content lives.** Four Jekyll collections defined in
@@ -60,7 +50,7 @@ companion links) by looking up `site.<collection>` for a doc whose `slug`
 field matches — the lookup is by front-matter `slug`, not filename, so slug
 must equal filename stem (`_human_skills/foo.md` needs `slug: foo`) or
 cross-links silently fail to resolve. `scripts/audit.py` checks for this
-mismatch on the collections it still knows about.
+mismatch across all three collections.
 
 **baseurl discipline.** Deployed as a project site (`baseurl: "/Corpus"`,
 not root), so every internal link in page bodies and templates must go
@@ -68,9 +58,7 @@ through Jekyll's `relative_url` filter — `{{ '/human-skills/foo/' |
 relative_url }}` in Liquid, or the equivalent in Markdown body links. A
 bare `/human-skills/foo/` link works locally at root but breaks once
 deployed under `/Corpus/`. `scripts/audit.py` flags unwrapped internal
-links (though currently only for the `human-skills` / `ai-skills` /
-`about-corpus` path prefixes it still knows about — see Known issue above;
-`/agent-skills/` links aren't checked).
+links across all four collections.
 
 **Content templates.** Each Human Skill / AI-Assisted Workflow follows a
 fixed 6-section H2 body structure (Definition → Learning Outcome → Core
