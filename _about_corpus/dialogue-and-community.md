@@ -1,7 +1,7 @@
 ---
 title: Dialogue and Community
 summary: Why dialogue, not writing alone, is the deepest form of communication this course teaches.
-order: 6
+order: 7
 ---
 
 Writing can be polished into something impressive without the writer ever being tested on

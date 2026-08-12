@@ -5,7 +5,7 @@ layout: page
 ---
 <p>
 Corpus is an archive, not a syllabus. It exists so the durable parts of
-CS373 &mdash; how to scope a topic, write a caption that works, defend your
+the computer science capstone &mdash; how to scope a topic, write a caption that works, defend your
 own research in conversation &mdash; outlive any one semester or instructor.
 </p>
 

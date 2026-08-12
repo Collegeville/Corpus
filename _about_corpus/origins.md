@@ -1,11 +1,11 @@
 ---
 title: Origins
-summary: Why this archive exists, and how it grew out of Mike Heroux's retirement from teaching CS373.
+summary: Why this archive exists, and how it grew out of Mike Heroux's retirement from teaching the computer science capstone.
 order: 1
 ---
 
-For 28 years, Mike Heroux taught CSCI 373, the Senior Research Seminar capstone course at the
-College of St. Benedict and St. John's University — an alternative to an Honors Thesis, built
+For 28 years, Mike Heroux taught the computer science capstone — officially CSCI 373, the Senior
+Research Seminar — at the College of St. Benedict and St. John's University, an alternative to an Honors Thesis, built
 around a single question: can you become the campus expert on a topic of your own choosing, and
 build the habits to do it again on your own for the rest of your career?
 
@@ -16,7 +16,7 @@ research, writing, and speaking well — the parts that were never really about 
 students, or any one year's tools.
 
 Corpus exists to pull that core out and give it a home that outlives the course itself. Mike is
-retiring from teaching CS373; a successor instructor is taking over, and she needed something more
+retiring from teaching the capstone; a successor instructor is taking over, and she needed something more
 durable to build on than a personal website's file structure. Corpus is that something: an
 archive, organized so the timeless material (Human Skills) is clearly separated from the material
 that's genuinely tied to the current moment's tools (AI-Assisted Workflows and Agent Skills) — see

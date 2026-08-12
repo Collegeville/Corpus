@@ -330,6 +330,72 @@ pre {
   padding-top: 0.05em;
 }
 
+/* Homepage-only featured callout — the one place this site points a
+   first-time visitor at something before the page has explained itself.
+   Deliberately distinct from .card: full-width, a gold left rule like a
+   marginal annotation, sits above the intro paragraph rather than beside
+   its peers in the card grid. Links off-site (maherou.github.io), so it
+   carries an explicit external-link cue. */
+.featured-callout {
+  position: relative; /* anchors the stretched-link ::after below */
+  display: block;
+  background: var(--color-margin);
+  border: 1px solid var(--color-rule);
+  border-left: 4px solid var(--color-gold);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.75rem;
+  margin: 0 0 2.5rem;
+}
+.featured-callout:hover {
+  border-color: var(--color-navy);
+  border-left-color: var(--color-gold);
+  background: var(--color-surface);
+}
+.featured-callout__eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-gold);
+  margin-bottom: 0.4rem;
+}
+.featured-callout__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--color-ink);
+  font-size: 1.6rem;
+  line-height: 1.25;
+  margin: 0 0 0.5rem;
+}
+.featured-callout__body {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-ui);
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  max-width: 42rem;
+}
+.featured-callout__cta {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  text-decoration: none;
+}
+.featured-callout__cta::after {
+  /* Stretched link: makes the whole card clickable/hoverable while
+     keeping markup that kramdown can safely parse (a bare <a> wrapping
+     block-level children like <div>/<h3>/<p> breaks kramdown's inline
+     HTML parser, since <a> is span-level in its default tag list). */
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+.featured-callout:hover .featured-callout__cta {
+  color: var(--color-navy-deep);
+}
+
 /* Skill/section index cards -------------------------------------------- */
 .card-grid {
   display: grid;

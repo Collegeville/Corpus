@@ -8,6 +8,18 @@ wide: true
 <p class="home-tagline">{{ site.tagline }}</p>
 <hr class="rule">
 
+<!-- Featured callout: the philosophy underneath everything else here, so a
+     first-time visitor meets it before the site starts explaining its own
+     structure. Points at the in-repo copy (_about_corpus/lifetime-assignment.md)
+     rather than the original external course page, so the link keeps
+     working independent of that site's own structure. -->
+<div class="featured-callout">
+  <div class="featured-callout__eyebrow">Start here</div>
+  <h3 class="featured-callout__title">The Lifetime Assignment: Ever Due, Never Done</h3>
+  <p class="featured-callout__body">Thirteen lifelong habits for a thoughtful professional life &mdash; the philosophy underneath every skill, workflow, and page in this Corpus.</p>
+  <a class="featured-callout__cta" href="{{ '/about-corpus/lifetime-assignment/' | relative_url }}">Read the Lifetime Assignment &#8599;</a>
+</div>
+
 <!-- Reuses the skill-page layout classes (skill-layout / skill-body /
      marginalia) so the homepage shares the same visual language as every
      other page, rather than introducing a one-off hero pattern. The

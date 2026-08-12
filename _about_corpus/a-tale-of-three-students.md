@@ -1,10 +1,10 @@
 ---
 title: A Tale of Three Students
 summary: A short skit — Null, Einar, and Dux — dramatizing what following (or skipping) these habits actually looks like over a semester.
-order: 3
+order: 4
 ---
 
-*A short skit by Mike Heroux, performed for CS373 classes. Lightly formatted for the page; the
+*A short skit by Mike Heroux, performed for computer science capstone classes. Lightly formatted for the page; the
 content is otherwise unchanged from the original — characters, jokes, and all.*
 
 **Roles:** Narrator · Student 0, "Null" · Student 1, "Einar" · Student 2, "Dux"

@@ -1,12 +1,12 @@
 ---
 title: "ReVeaL: Habits of Ongoing Learning"
 summary: The habits the course tried to instill for continuing to learn after graduation.
-order: 5
+order: 6
 ---
 
 The computing field doesn't hold still. A professional who stops learning the moment they leave
 school falls behind — not dramatically, not all at once, but steadily, in a way that's hard to
-notice until it's a real gap. ReVeaL is CS373's name for the habit built to counter that: a
+notice until it's a real gap. ReVeaL is the computer science capstone's name for the habit built to counter that: a
 standing weekly practice of self-teaching, kept up for an entire semester until it's no longer a
 chore but a reflex.
 

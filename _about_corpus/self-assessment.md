@@ -1,12 +1,12 @@
 ---
 title: Self-Assessment
 summary: How students were expected to test their own depth of understanding.
-order: 7
+order: 8
 ---
 
 A written report can be polished well past the point of reflecting real understanding — that's
 true of any writer under deadline pressure, and it's become far easier with generative AI tools
-in the mix. CS373's answer wasn't to police the writing more strictly; it was to build assessment
+in the mix. The computer science capstone's answer wasn't to police the writing more strictly; it was to build assessment
 around formats that are much harder to fake.
 
 The central mechanism is [Level of Expertise Dialogue]({{ '/human-skills/level-of-expertise-dialogue/' | relative_url }}):

@@ -1,7 +1,7 @@
 ---
 title: Philosophy
 summary: The thinking behind splitting the archive into timeless Human Skills and timely, tool-dependent material.
-order: 2
+order: 3
 ---
 
 Corpus is organized around one belief: some skills decay fast, and others barely decay at all.
