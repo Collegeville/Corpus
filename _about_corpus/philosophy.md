@@ -24,7 +24,9 @@ stating plainly here:
   detail. Figuring out how to define and complete the work was part of the point — closer to
   professional life than a rubric-driven classroom.
 - **No minimum page or word counts — the opposite, if anything.** The class motto was "enough
-  words, no more." In professional life, almost everything you write is capped, not padded.
+  words, no more" — originally "Use enough words, no more," trimmed down over the years because
+  apparently even the motto had to follow its own advice :) In professional life, almost
+  everything you write is capped, not padded.
 - **Topics get repeated and refined, not written once and abandoned.** Writing and presenting the
   same material several times across a semester builds real depth, and rewards the discipline to
   keep improving something rather than moving on the moment it's "done."
