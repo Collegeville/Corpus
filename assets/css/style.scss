@@ -193,6 +193,40 @@ pre {
   font-style: italic;
 }
 
+/* Mobile nav toggle — styled here so it's ready to go the moment the
+   min-width override below stops forcing it open; harmless on wide
+   viewports where .sidebar__nav-toggle > summary is display:none. */
+.sidebar__nav-toggle {
+  margin-top: 1rem;
+}
+.sidebar__nav-toggle > summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  padding: 0.65rem 0;
+  border-top: 1px solid var(--color-rule);
+  border-bottom: 1px solid var(--color-rule);
+}
+.sidebar__nav-toggle > summary::-webkit-details-marker {
+  display: none;
+}
+.sidebar__nav-toggle > summary::after {
+  content: "\25BE"; /* ▾ */
+  color: var(--color-gold);
+}
+.sidebar__nav-toggle[open] > summary {
+  border-bottom: none;
+}
+.sidebar__nav-toggle[open] > summary::after {
+  content: "\25B4"; /* ▴ */
+}
+
 .content {
   padding: 3rem 3rem 6rem;
   max-width: calc(var(--measure) + var(--margin-rail-width) + 6rem);
@@ -478,6 +512,24 @@ footer.site-footer {
     border-bottom: 1px solid var(--color-rule);
   }
   .content { padding: 2rem 1.25rem 4rem; }
+}
+
+/* Above the sidebar-collapse breakpoint, ignore the <details> mechanism
+   entirely and keep the nav permanently open — restores the persistent
+   sidebar this site is built around. !important beats the UA stylesheet
+   rule that hides non-summary children of a closed <details>. */
+@media (min-width: 48.0625rem) {
+  .sidebar__nav-toggle > summary { display: none; }
+  .sidebar__nav-toggle > nav { display: block !important; }
+  /* Current Chromium wraps a closed <details>'s non-summary children in an
+     internal ::details-content box (content-visibility: hidden, 0 block
+     size) instead of hiding the children directly — overriding display on
+     the nav itself is a no-op there, so the wrapper has to be targeted too. */
+  .sidebar__nav-toggle::details-content {
+    content-visibility: visible !important;
+    block-size: auto !important;
+    overflow: visible !important;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
