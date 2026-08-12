@@ -16,12 +16,12 @@ research, writing, and speaking well — the parts that were never really about 
 students, or any one year's tools.
 
 Corpus exists to pull that core out and give it a home that outlives the course itself. Mike is
-retiring from teaching the capstone; a successor instructor is taking over, and she needed something more
-durable to build on than a personal website's file structure. Corpus is that something: an
-archive, organized so the timeless material (Human Skills) is clearly separated from the material
-that's genuinely tied to the current moment's tools (AI-Assisted Workflows and Agent Skills) — see
+retiring from teaching the capstone, and the material deserved something more durable to build on
+than a personal website's file structure. Corpus is that something: an archive, organized so the
+timeless material (Human Skills) is clearly separated from the material that's genuinely tied to
+the current moment's tools (AI-Assisted Workflows and Agent Skills) — see
 [Philosophy]({{ '/about-corpus/philosophy/' | relative_url }}) for why that split matters — with a visible path for
-future instructors, students, and contributors to keep adding to it after this handoff.
+future instructors, students, and contributors to keep adding to it going forward.
 
 The name fits a pattern already set by two related projects, Scribe (writing) and Orator
 (speaking), both part of the Collegeville project's Latin naming convention, itself a nod to the
