@@ -1,7 +1,7 @@
 ---
 title: Knowledge Half-Life
 summary: The rationale for why some skills are timeless and others need periodic refresh.
-order: 4
+order: 5
 ---
 
 Every piece of knowledge has a half-life — some span decades, some span months — and the entire

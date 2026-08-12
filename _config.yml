@@ -1,10 +1,10 @@
 title: Corpus
-tagline: "Twenty-eight years of CS373: research, writing, and speaking skills for computer scientists"
+tagline: "Twenty-eight years of the computer science capstone: research, writing, and speaking skills for computer scientists"
 description: >
   An archive of Human Skills, AI-Assisted Workflows, and Agent Skills for
-  technical research and communication, built from Mike Heroux's CS373
-  (Senior Research Seminar) capstone course at the College of St. Benedict
-  and St. John's University.
+  technical research and communication, built from Mike Heroux's Computer
+  Science Senior Research Seminar capstone course at the College of St.
+  Benedict and St. John's University.
 url: "https://collegeville.github.io"
 # This site is deployed as a project site at collegeville.github.io/Corpus/,
 # alongside (not replacing) the org's existing root homepage. All internal

@@ -6,7 +6,7 @@ wide: true
 ---
 
 <p>
-This is the class meeting and assignment schedule from the Spring 2026 offering of CS373 &mdash;
+This is the class meeting and assignment schedule from the Spring 2026 offering of the computer science capstone &mdash;
 included as a concrete example of how the Human Skills, AI-Assisted Workflows, and grading
 components in this archive actually get sequenced across a semester. Exact dates, topics, and
 assignment names shift from one offering to the next; treat the pattern (weekly rhythm,
@@ -54,7 +54,7 @@ cross-reference by date.
 |---|---|---|---|
 | Jan 23 | Fri | Class Introduction, Breakouts on Generative AI, Quizzes 1 & 2, Intro to Generative AI Tools, Course Intro, First AI-Assisted Task, Presentation Exercises, Second AI-Assisted Task | Create Google Gemini Advanced account; Sign up for class Slack workspace; Submit "Two-Truths-and-a-Lie" form |
 | Jan 26 | Mon | Hobby Talks | Hobby talks (presentations) |
-| Jan 30 | Fri | Reference Librarian Session (K. Schleck); "A Tale of 3 CS373 Students"; AI Usage Policy Development; Titles and Abstracts Exercises; Two-Truths-and-a-Lie Submission | &mdash; |
+| Jan 30 | Fri | Reference Librarian Session (K. Schleck); "A Tale of 3 Capstone Students"; AI Usage Policy Development; Titles and Abstracts Exercises; Two-Truths-and-a-Lie Submission | &mdash; |
 | Feb 2 | Mon | Review potential research topics (via Zoom) | 3&ndash;5 research topics (Gemini Deep Research) |
 | Feb 6 | Fri | Two Truths and a Lie Event, AI-assisted Development Exercise, In-class Reveal Discussions | Handbook Quiz |
 | Feb 9 | Mon | Handbook quiz preparation, Quiz challenge, Handbook quiz (instructor edition), Zotero setup, In-class Reveal Discussions, Personal Progress Form | Titles and Abstracts; Set up Zotero Group Sharing |
@@ -87,7 +87,7 @@ cross-reference by date.
 | May 14 | Thu | SOTF Expertise Interviews (Paper due evening before) | Final SOTF Interview |
 
 <p><em>
-Adapted from the Spring 2026 CS373 course materials: the
+Adapted from the Spring 2026 computer science capstone course materials: the
 <a href="https://maherou.github.io/Teaching/files/CS373/2026-Spring-Class-Meeting-Schedule/">Class Meeting Schedule</a>,
 the <a href="https://maherou.github.io/Teaching/files/CS373/2026-Spring-Class-Assignment-Due-Dates/">Assignment Due Dates</a>,
 and the <a href="https://maherou.github.io/Teaching/files/CS373/Overview-of-Assignments-and-Grading/">Overview of Assignments and Grading</a>.

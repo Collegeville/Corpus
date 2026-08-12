@@ -1,10 +1,10 @@
 ---
 title: AI as Collaborator
 summary: The course's stance on generative AI tools and authorship.
-order: 8
+order: 9
 ---
 
-CS373's stance on generative AI tools has never been prohibition. Since the earliest capable
+The computer science capstone's stance on generative AI tools has never been prohibition. Since the earliest capable
 tools became available, the course embraced them as a genuine part of how research, writing, and
 presenting get done — while holding a hard line on what that use has to mean for authorship.
 
