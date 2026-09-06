@@ -101,3 +101,12 @@ exclude:
   - corpus-search-build-brief.md
   - scripts
   - vendor
+  # Downloadable Agent Skill files carry their own YAML front matter (the
+  # name/description Claude Skills format expects), which Jekyll would
+  # otherwise mistake for page front matter — stripping it, rendering the
+  # Markdown body to HTML, and serving it at a `.../SKILL/` page instead of
+  # the literal `SKILL.md` file. Excluding them from the build and linking
+  # to the raw GitHub blob instead (see the agent_skills collection pages)
+  # keeps the served file byte-identical to what's committed.
+  - assets/agent-skills/position-paper-grill/SKILL.md
+  - assets/agent-skills/deck-and-delivery-review/SKILL.md
