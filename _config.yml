@@ -97,5 +97,6 @@ exclude:
   - README.md
   - CLAUDE.md
   - tell-it-well-build-brief.md
+  - corpus-search-build-brief.md
   - scripts
   - vendor

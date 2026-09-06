@@ -462,6 +462,39 @@ pre {
   line-height: 1.5;
 }
 
+/* Search page ------------------------------------------------------------
+   Results reuse .card / .card-grid (the same tiles as the collection index
+   pages) so a search result looks like any other listing entry on the
+   site, rather than introducing a distinct visual language just for it. */
+.search-input {
+  display: block;
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  padding: 0.65rem 0.9rem;
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  color: var(--color-ink);
+  margin: 1rem 0;
+}
+.search-input:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+  border-color: var(--color-navy);
+}
+.search-status {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin: 0 0 1.5rem;
+}
+.search-result__meta {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
 /* Content tables (schedules, comparisons) -------------------------------
    display: block + overflow-x: auto keeps a wide table (many columns, or
    long cell text like the sample schedule) from ever forcing the whole

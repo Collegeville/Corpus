@@ -1,0 +1,25 @@
+---
+layout: null
+---
+{%- comment -%}
+Liquid-generated search index — no plugin required, so this runs identically
+in `jekyll serve` and on GitHub Pages (which does not execute third-party
+Jekyll plugins). Regenerated on every build; concat keeps the four
+collections in one array so a single loop can emit clean comma-separated
+JSON without a boundary-comma special case between collections.
+{%- endcomment -%}
+{% capture newline %}
+{% endcapture %}
+{%- assign all_docs = site.human_skills | concat: site.ai_workflows | concat: site.agent_skills | concat: site.about_corpus -%}
+[
+{%- for doc in all_docs -%}
+  {
+    "title": {{ doc.title | jsonify }},
+    "url": {{ doc.url | relative_url | jsonify }},
+    "section": {{ doc.section | jsonify }},
+    "category": {{ doc.category | default: "" | jsonify }},
+    "summary": {{ doc.summary | default: "" | jsonify }},
+    "text": {{ doc.content | strip_html | replace: newline, " " | jsonify }}
+  }{%- unless forloop.last -%},{%- endunless -%}
+{%- endfor -%}
+]

@@ -111,6 +111,10 @@ about-corpus/index.md    About Corpus landing page
 human-skills/index.md    Human Skills landing page (auto-lists the collection)
 ai-workflows/index.md    AI-Assisted Workflows landing page (auto-lists the collection)
 agent-skills/index.md    Agent Skills landing page (auto-lists the collection)
+search/index.md          client-side search page (vanilla JS, no dependency)
+search.json               Liquid-generated search index — every doc across all
+                          four collections, title/url/section/category/summary/
+                          text; regenerated on every build, no plugin required
 index.md                 site homepage
 ```
 
