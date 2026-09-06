@@ -16,7 +16,8 @@ understanding behind the work is real — which is exactly why this format carri
 in the course, alongside (not instead of) the writing itself.
 
 The same instinct — test understanding through live, low-stakes conversation rather than through
-scored artifacts alone — shows up in a smaller, friendlier form too: **hobby talks**. Early in
+scored artifacts alone — shows up in a smaller, friendlier form too:
+[**hobby talks**]({{ '/human-skills/tell-it-well/' | relative_url }}). Early in
 the semester, before any of the real stakes had built up, each student gave a short talk on a
 hobby they actually knew well — chosen deliberately, since hobbies are very often genuinely
 technical: strategy in a favorite game, the mechanics of a craft, an approach to training. There

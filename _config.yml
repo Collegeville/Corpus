@@ -96,5 +96,6 @@ exclude:
   - Gemfile.lock
   - README.md
   - CLAUDE.md
+  - tell-it-well-build-brief.md
   - scripts
   - vendor

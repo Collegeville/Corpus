@@ -20,7 +20,9 @@ talk padded with content you happened to have.
 
 This is a close companion to [Presentations That Work]({{ '/human-skills/presentations-that-work/' | relative_url }}):
 that skill covers the overall story structure and delivery discipline, while this one is
-specifically about *the order in which you build the thing*.
+specifically about *the order in which you build the thing*. For the delivery side once the deck
+exists — voice, stage presence, and how these slides are actually used live — see
+[Tell It Well]({{ '/human-skills/tell-it-well/' | relative_url }}).
 
 ## Learning Outcome
 
@@ -79,7 +81,7 @@ this arc — "static caching strategies fail under bursty load; here's an adapti
 here's why the overhead doesn't cancel out the benefit" — a preview that's accurate because it
 was written after the talk actually existed, not guessed at beforehand.
 
-**A real-world instance: hobby talks.** Early in the semester, before the stakes of a real
+**A real-world instance: [hobby talks]({{ '/human-skills/tell-it-well/' | relative_url }}).** Early in the semester, before the stakes of a real
 research presentation, each student gave a short talk on a hobby they knew well — chosen
 precisely because hobbies are often genuinely technical (strategy in a favorite game, the
 mechanics of a craft, an approach to training). There was no grade attached. Feedback was given
