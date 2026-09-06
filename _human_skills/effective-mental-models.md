@@ -3,6 +3,7 @@ title: Effective Mental Models
 category: Research
 tags: [mental-models, understanding, diagrams]
 summary: Build an explicit model of entities and relationships to understand any system, and know the three phases you pass through while building one.
+related_human_skill: predictions-that-work
 source: https://maherou.github.io/Teaching/files/CS373/MentalModels/
 slug: effective-mental-models
 ---

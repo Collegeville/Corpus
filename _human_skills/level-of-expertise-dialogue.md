@@ -3,6 +3,7 @@ title: Level of Expertise Dialogue
 category: Discussion
 tags: [self-assessment, dialogue, expertise]
 summary: A notes-free, in-person conversation built around five questions that tests whether you can actually speak to the substance of your own work.
+related_ai_workflow: generative-ai-tools
 source: https://maherou.github.io/Teaching/files/CS373/LevelOfExpertiseAssessment/
 slug: level-of-expertise-dialogue
 ---

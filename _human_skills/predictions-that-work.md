@@ -3,6 +3,7 @@ title: Predictions That Work
 category: Research
 tags: [prediction, forecasting, trends]
 summary: Ground any predictive claim in a model of the entities and relationships at play, and back it with real evidence rather than gut feel.
+related_human_skill: effective-mental-models
 source: https://collegeville.github.io/Scribe/PredictionsThatWork/
 slug: predictions-that-work
 ---

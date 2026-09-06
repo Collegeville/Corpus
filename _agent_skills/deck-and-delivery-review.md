@@ -3,7 +3,7 @@ title: Deck & Delivery Review
 category: Presenting
 tags: [slides, presentations, review, assessment]
 summary: An agent skill that assesses an uploaded slide deck in a single pass against Slides That Work and Presentations That Work, producing one structured report.
-related_human_skill: slides-that-work
+related_human_skill: [slides-that-work, presentations-that-work]
 slug: deck-and-delivery-review
 ---
 
