@@ -9,6 +9,11 @@
   <details class="sidebar__nav-toggle">
     <summary>Menu</summary>
     <nav aria-label="Primary">
+    <span class="nav-section-label">Search</span>
+    <ul>
+      <li><a href="{{ '/search/' | relative_url }}" class="nav-overview-link{% if page.section == 'Search' %} is-active{% endif %}">Search Corpus</a></li>
+    </ul>
+
     <span class="nav-section-label">About Corpus</span>
     <ul>
       <li><a href="{{ '/about-corpus/' | relative_url }}" class="nav-overview-link{% if page.section == 'About Corpus' and page.url == '/about-corpus/' %} is-active{% endif %}">Overview</a></li>
