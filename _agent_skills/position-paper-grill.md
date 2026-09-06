@@ -41,7 +41,7 @@ matches the full presentation, every component has all four parts, risks aren't 
 
 ## Download
 
-- [Download the skill file](https://raw.githubusercontent.com/Collegeville/Corpus/main/assets/agent-skills/position-paper-grill/SKILL.md)
+- <a class="skill-download" download="SKILL.md" href="https://raw.githubusercontent.com/Collegeville/Corpus/main/assets/agent-skills/position-paper-grill/SKILL.md">Download the skill file</a>
 
 ## Notes and limitations
 
