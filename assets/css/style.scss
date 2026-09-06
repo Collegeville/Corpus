@@ -361,6 +361,18 @@ pre {
   padding-top: 0.05em;
 }
 
+/* Rubric / Checklist sections: kramdown renders "- [ ]" items as a plain
+   <ul> with a task-list-item class, so without this the browser shows a
+   bullet next to the checkbox on every line. Drop the list's own marker
+   and let the checkbox stand alone. */
+.skill-body ul.task-list {
+  list-style: none;
+  padding-left: 0;
+}
+.skill-body ul.task-list .task-list-item-checkbox {
+  margin-right: 0.6em;
+}
+
 /* Homepage-only featured callout — the one place this site points a
    first-time visitor at something before the page has explained itself.
    Deliberately distinct from .card: full-width, a gold left rule like a

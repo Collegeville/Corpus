@@ -88,13 +88,14 @@ somewhere else in the paper.
 
 ## Common Pitfalls
 
-- Restating what's already obvious from the figure or the main text — a caption should add
-  context and interpretation, not just repeat the axis labels in words.
-- Describing the figure but never interpreting it — "the line goes up" is not the same as "the
-  line going up means X."
-- Using the same caption style regardless of venue — a conference-slide caption dropped into a
-  journal submission reads as thin; a journal-length caption on a slide will lose the room.
-- Leaving the caption unconnected to the actual research question the figure is meant to
+- **Restating what's already obvious from the figure or the main text** — a caption should
+  add context and interpretation, not just repeat the axis labels in words.
+- **Describing the figure but never interpreting it** — "the line goes up" is not the same
+  as "the line going up means X."
+- **Using the same caption style regardless of venue** — a conference-slide caption dropped
+  into a journal submission reads as thin; a journal-length caption on a slide will lose the
+  room.
+- **Leaving the caption unconnected to the actual research question** the figure is meant to
   support.
 
 ## Rubric / Checklist

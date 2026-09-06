@@ -65,14 +65,15 @@ box labeled "prior approaches" rather than spelled out.
 
 ## Common Pitfalls
 
-- Trying to make a Phase 1 model precise and complete — precision belongs to later phases;
-  Phase 1's job is breadth, not accuracy.
-- Leaving a mental model entirely implicit, so it can never be checked, shared, or corrected.
-- A model so precise it has no room left to expose the dynamics that actually matter — an
-  overly literal diagram of every detail is often less useful than a simpler one that highlights
-  the right relationships.
-- Never revisiting the model as understanding deepens — treating the Phase 1 sketch as final
-  rather than as a draft to be replaced.
+- **Trying to make a Phase 1 model precise and complete** — precision belongs to later
+  phases; Phase 1's job is breadth, not accuracy.
+- **Leaving a mental model entirely implicit**, so it can never be checked, shared, or
+  corrected.
+- **A model so precise it has no room left** to expose the dynamics that actually matter —
+  an overly literal diagram of every detail is often less useful than a simpler one that
+  highlights the right relationships.
+- **Never revisiting the model as understanding deepens** — treating the Phase 1 sketch as
+  final rather than as a draft to be replaced.
 
 ## Rubric / Checklist
 

@@ -63,14 +63,14 @@ differently next time.
 
 ## Common Pitfalls
 
-- Stopping at questions one and two — cataloging what happened without ever converting it into
-  action is reflection without improvement.
-- Vague actions ("communicate better") that aren't specific enough to actually change behavior
-  next time.
-- Skipping the individual-answers-first step in a group retrospective, so the loudest voice in
-  the room ends up setting the whole narrative.
-- Treating a retrospective as a one-time event for a single project, rather than a habit applied
-  after any major activity.
+- **Stopping at questions one and two** — cataloging what happened without ever converting
+  it into action is reflection without improvement.
+- **Vague actions** ("communicate better") that aren't specific enough to actually change
+  behavior next time.
+- **Skipping the individual-answers-first step in a group retrospective**, so the loudest
+  voice in the room ends up setting the whole narrative.
+- **Treating a retrospective as a one-time event for a single project**, rather than a habit
+  applied after any major activity.
 
 ## Rubric / Checklist
 

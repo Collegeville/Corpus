@@ -93,13 +93,13 @@ that actually mattered.
 
 ## Common Pitfalls
 
-- Writing the introduction first, which locks in a structure before you actually know what the
-  talk's key points are.
-- A middle slide that's interesting but doesn't connect to any of the chosen takeaways — cut
-  it, even if it was hard to produce.
-- Slide text that repeats what's being said out loud, rather than complementing it with data,
-  diagrams, or quotes.
-- Running over the time limit rather than cutting content in advance to fit it.
+- **Writing the introduction first**, which locks in a structure before you actually know
+  what the talk's key points are.
+- **A middle slide that's interesting but doesn't connect** to any of the chosen takeaways —
+  cut it, even if it was hard to produce.
+- **Slide text that repeats what's being said out loud**, rather than complementing it with
+  data, diagrams, or quotes.
+- **Running over the time limit** rather than cutting content in advance to fit it.
 
 ## Rubric / Checklist
 

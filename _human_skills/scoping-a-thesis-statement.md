@@ -74,15 +74,15 @@ chapter's worth of work, not a full thesis.
 
 ## Common Pitfalls
 
-- Choosing a topic before checking whether resources actually exist for it (see: any topic
-  whose "sources" turn out to be a company's own marketing pages).
-- A thesis statement that could be true of a magazine article, not a technical project.
-- Scoping at the level of a full thesis rather than a single chapter — ambition without a
-  finish line.
-- Confusing "an active, trendy area" with "an area with genuine technical substance available
-  to study."
-- Picking a topic area that's sound, but never re-testing the *specific* thesis statement drawn
-  from it — Stage 1 and Stage 2 are both required, not either/or.
+- **Choosing a topic before checking whether resources actually exist** for it (see: any
+  topic whose "sources" turn out to be a company's own marketing pages).
+- **A thesis statement that could be true of a magazine article**, not a technical project.
+- **Scoping at the level of a full thesis** rather than a single chapter — ambition without
+  a finish line.
+- Confusing "an active, trendy area" with "an area with genuine technical substance
+  available to study."
+- **Picking a topic area that's sound, but never re-testing the *specific* thesis
+  statement** drawn from it — Stage 1 and Stage 2 are both required, not either/or.
 
 ## Rubric / Checklist
 

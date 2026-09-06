@@ -64,14 +64,14 @@ frequently" — that's the difference between a vague claim and one a reader can
 
 ## Common Pitfalls
 
-- Reporting results in vague qualifiers ("significant improvement") instead of numbers a
+- **Reporting results in vague qualifiers** ("significant improvement") instead of numbers a
   reader can judge for themselves.
-- Missing the problem statement — motivation without a clearly scoped problem leaves the
+- **Missing the problem statement** — motivation without a clearly scoped problem leaves the
   reader unsure what was actually solved.
-- A conclusions sentence that just repeats the results instead of stating their implication or
-  scope of generality.
-- A title so long or so clever it obscures what the work is actually about — catchy and short
-  beats catchy and long.
+- **A conclusions sentence that just repeats the results** instead of stating their
+  implication or scope of generality.
+- **A title so long or so clever** it obscures what the work is actually about — catchy and
+  short beats catchy and long.
 
 ## Rubric / Checklist
 

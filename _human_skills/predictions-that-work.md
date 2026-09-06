@@ -66,13 +66,13 @@ continues forever, when in reality something will make it stop.
 
 ## Common Pitfalls
 
-- Extrapolating a trend without checking it against known constraints — the trend that "cannot
-  continue" eventually won't.
-- Treating a prediction as purely technical while ignoring the human and social factors that
-  often determine what actually gets adopted.
+- **Extrapolating a trend without checking it against known constraints** — the trend that
+  "cannot continue" eventually won't.
+- **Treating a prediction as purely technical** while ignoring the human and social factors
+  that often determine what actually gets adopted.
 - Presenting a single data point as though it were an observed trend.
-- Skipping the modeling step entirely and jumping straight to a conclusion, so there's no way
-  to say *why* the prediction should be trusted.
+- **Skipping the modeling step entirely and jumping straight to a conclusion**, so there's
+  no way to say *why* the prediction should be trusted.
 
 ## Rubric / Checklist
 

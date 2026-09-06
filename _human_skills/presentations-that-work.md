@@ -74,13 +74,13 @@ a call stack (rule 10).
 
 ## Common Pitfalls
 
-- Slides that are really just an outline of the spoken content — the audience reads faster
-  than you can talk, so this makes the talk feel slow rather than clear.
-- No backup plan when the projector, laptop, or slide file fails.
-- Going over the time limit rather than having a plan for what to cut.
-- A talk that tries to cover everything in the paper instead of a focused subset with a real
-  through-line.
-- Ending without distinct, memorable key points — trailing off instead of closing.
+- **Slides that are really just an outline of the spoken content** — the audience reads
+  faster than you can talk, so this makes the talk feel slow rather than clear.
+- **No backup plan** when the projector, laptop, or slide file fails.
+- **Going over the time limit** rather than having a plan for what to cut.
+- **A talk that tries to cover everything in the paper** instead of a focused subset with a
+  real through-line.
+- **Ending without distinct, memorable key points** — trailing off instead of closing.
 
 ## Rubric / Checklist
 

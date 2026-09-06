@@ -165,25 +165,25 @@ approachable beats a broad, shallow survey of something complex, every time.
 
 - **Talk for experts** — trying to summarize an entire complex topic instead of picking one
   narrow, deep slice; only people who already knew the material can follow.
-- Presenting material only shallowly understood — unable to field a question that steps even
-  slightly beyond the exact points on the slides, which undercuts both confidence and audience
-  interest.
-- Slides used as note cards — a slide that just reminds the speaker what to say next, rather than
-  complementing it.
-- Never practicing out loud before delivering — catching filler words, uptalk, and vocal fry only
-  by ear, not by silently reviewing slides.
-- Filling pauses with "um" or "ah" instead of a genuine, silent pause.
-- Uptalk — ending statements on a rising, question-like inflection that reads as a lack of
-  confidence.
-- Vocal fry — a gravelly quality that makes the speaker harder to understand.
-- A stiff, flat opening ("my name is so-and-so and I'm going to talk about X") that sets a
-  subdued tone before the talk even starts.
-- A bland, recap-style closing instead of a small handful of key points stated as claims of
-  consequence.
-- Rushing the ending without room for synthesis, so the close restates points already made
-  instead of reaching the further insight they set up.
-- Ending without actually saying thank you, leaving the audience unsure whether to clap or wait
-  for more.
+- **Presenting material only shallowly understood** — unable to field a question that steps
+  even slightly beyond the exact points on the slides, which undercuts both confidence and
+  audience interest.
+- **Slides used as note cards** — a slide that just reminds the speaker what to say next,
+  rather than complementing it.
+- **Never practicing out loud before delivering** — catching filler words, uptalk, and vocal
+  fry only by ear, not by silently reviewing slides.
+- **Filling pauses with "um" or "ah"** instead of a genuine, silent pause.
+- **Uptalk** — ending statements on a rising, question-like inflection that reads as a lack
+  of confidence.
+- **Vocal fry** — a gravelly quality that makes the speaker harder to understand.
+- **A stiff, flat opening** ("my name is so-and-so and I'm going to talk about X") that sets
+  a subdued tone before the talk even starts.
+- **A bland, recap-style closing** instead of a small handful of key points stated as claims
+  of consequence.
+- **Rushing the ending without room for synthesis**, so the close restates points already
+  made instead of reaching the further insight they set up.
+- **Ending without actually saying thank you**, leaving the audience unsure whether to clap
+  or wait for more.
 
 ## Rubric / Checklist
 

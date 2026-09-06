@@ -54,13 +54,13 @@ expecting it to still be accurate next year.
 
 ## Common Pitfalls
 
-- Treating every skill as equally durable, so time gets spent memorizing interface details that
-  will be obsolete before they'd ever be needed again.
-- Dismissing something as "just an interface" when it's actually built on a durable concept
-  worth extracting and keeping — the goal is to separate the two, not throw out anything
-  tool-specific.
-- Never revisiting the assessment — a domain's rate of change isn't fixed forever; something
-  that was fast-changing can stabilize, and vice versa.
+- **Treating every skill as equally durable**, so time gets spent memorizing interface
+  details that will be obsolete before they'd ever be needed again.
+- **Dismissing something as "just an interface"** when it's actually built on a durable
+  concept worth extracting and keeping — the goal is to separate the two, not throw out
+  anything tool-specific.
+- **Never revisiting the assessment** — a domain's rate of change isn't fixed forever;
+  something that was fast-changing can stabilize, and vice versa.
 
 ## Rubric / Checklist
 

@@ -106,15 +106,15 @@ hand-format a reference list.
 
 ## Common Pitfalls
 
-- Trying to manually control exactly where a figure or table lands on the page. LaTeX places
-  floats algorithmically based on the surrounding content; you can nudge it, but you don't have
-  direct control the way you would dragging an image in a word processor.
-- Citing a key with `\cite{...}` that has no matching entry in the `.bib` file — this produces
-  an unresolved reference rather than a build error you'd immediately notice.
-- Treating `\label` and `\ref` as manual bookkeeping (writing the number yourself) instead of
-  letting the compiler resolve them — which is the entire point of using them.
-- Skipping the "read an existing document as a template" strategy. The source file above is
-  meant to be copied from and modified, not written from scratch each time.
+- **Trying to manually control exactly where a figure or table lands on the page.** LaTeX
+  places floats algorithmically based on the surrounding content; you can nudge it, but you
+  don't have direct control the way you would dragging an image in a word processor.
+- **Citing a key with `\cite{...}` that has no matching entry in the `.bib` file** — this
+  produces an unresolved reference rather than a build error you'd immediately notice.
+- **Treating `\label` and `\ref` as manual bookkeeping** (writing the number yourself)
+  instead of letting the compiler resolve them — which is the entire point of using them.
+- **Skipping the "read an existing document as a template" strategy.** The source file above
+  is meant to be copied from and modified, not written from scratch each time.
 
 ## Rubric / Checklist
 

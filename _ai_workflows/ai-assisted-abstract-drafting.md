@@ -53,13 +53,14 @@ in Titles and Abstracts That Work rather than accepting the AI's vaguer phrasing
 
 ## Common Pitfalls
 
-- Skipping step 2 — asking for "a good abstract" without providing explicit criteria produces a
-  generic result with no structure to check it against.
-- Treating the AI's draft as final rather than as something to revise — step 4 isn't optional.
-- Letting vague results language from the AI draft survive into the final version, when the
-  underlying skill explicitly calls for numbers over qualifiers.
-- Using this workflow as a substitute for understanding your own results, rather than as a
-  drafting accelerant.
+- **Skipping step 2** — asking for "a good abstract" without providing explicit criteria
+  produces a generic result with no structure to check it against.
+- **Treating the AI's draft as final** rather than as something to revise — step 4 isn't
+  optional.
+- **Letting vague results language from the AI draft survive into the final version**, when
+  the underlying skill explicitly calls for numbers over qualifiers.
+- **Using this workflow as a substitute for understanding your own results**, rather than as
+  a drafting accelerant.
 
 ## Checklist
 

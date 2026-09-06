@@ -63,15 +63,15 @@ length without adding meaning. What's left says exactly the same thing in a fift
 
 ## Common Pitfalls
 
-- Hedging phrases ("it is important to note," "in a sense") that pad a sentence without
+- **Hedging phrases** ("it is important to note," "in a sense") that pad a sentence without
   changing its meaning.
-- Vague intensifiers ("very," "really," "significantly") standing in for a number or a specific
-  claim — the same failure mode covered under
-  [Titles and Abstracts That Work]({{ '/human-skills/titles-and-abstracts-that-work/' | relative_url }})'s results
-  section.
-- A sentence or paragraph that could be deleted without changing the reader's understanding —
-  which means it wasn't earning its place.
-- Introducing an acronym or term without ever defining it, assuming the reader already knows.
+- **Vague intensifiers** ("very," "really," "significantly") standing in for a number or a
+  specific claim — the same failure mode covered under [Titles and Abstracts That Work]({{
+  '/human-skills/titles-and-abstracts-that-work/' | relative_url }})'s results section.
+- **A sentence or paragraph that could be deleted** without changing the reader's
+  understanding — which means it wasn't earning its place.
+- **Introducing an acronym or term without ever defining it**, assuming the reader already
+  knows.
 
 ## Rubric / Checklist
 
