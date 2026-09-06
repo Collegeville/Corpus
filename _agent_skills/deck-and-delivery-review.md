@@ -38,7 +38,7 @@ structure, scope, and delivery readiness).
 
 ## Download
 
-- [Download the skill file](https://raw.githubusercontent.com/Collegeville/Corpus/main/assets/agent-skills/deck-and-delivery-review/SKILL.md)
+- <a class="skill-download" download="SKILL.md" href="https://raw.githubusercontent.com/Collegeville/Corpus/main/assets/agent-skills/deck-and-delivery-review/SKILL.md">Download the skill file</a>
 
 ## Notes and limitations
 
