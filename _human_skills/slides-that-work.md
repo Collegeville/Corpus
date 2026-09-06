@@ -3,7 +3,7 @@ title: Slides That Work
 category: Presenting
 tags: [presenting, slides, workflow]
 summary: Build a presentation backwards — key takeaways first, then the middle, then the intro last — so every slide earns its place.
-related_human_skill: presentations-that-work
+related_human_skill: [presentations-that-work, tell-it-well]
 source: https://maherou.github.io/Teaching/files/CS373/TalksThatWork/
 related_agent_skill: deck-and-delivery-review
 slug: slides-that-work

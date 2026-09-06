@@ -102,8 +102,13 @@ for coll in SKILL_COLLECTIONS:
             ("related_human_skill", "human_skills"),
         ]:
             val = fm.get(field)
-            if val and val not in docs[target_coll]:
-                log_issue(f"{f}: {field}: '{val}' does not match any slug/filename in {target_coll}")
+            if val:
+                # related_human_skill (only, so far) may be a single slug string
+                # or a YAML list of several — check every item either way.
+                vals = val if isinstance(val, list) else [val]
+                for v in vals:
+                    if v not in docs[target_coll]:
+                        log_issue(f"{f}: {field}: '{v}' does not match any slug/filename in {target_coll}")
 
 # --- Internal markdown links: /human-skills/x/, /ai-workflows/x/, /agent-skills/x/, /about-corpus/x/ ---
 # Matches both bare root-relative links (a bug, since they ignore baseurl) and

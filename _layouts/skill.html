@@ -48,11 +48,26 @@ layout: default
     {% endif %}
 
     {% if page.related_human_skill %}
-      {% assign paired = site.human_skills | where: "slug", page.related_human_skill | first %}
-      {% if paired %}
+      {% comment %}
+        related_human_skill accepts either a single slug (a string) or several
+        (a YAML list). `join` + `split` normalizes either shape into an array:
+        join's InputIterator wraps a lone string as a one-item array before
+        joining, so a plain string round-trips to a one-item array too — this
+        avoids a separate string-vs-array branch here and in every skill page
+        that sets this field.
+      {% endcomment %}
+      {% assign related_slugs = page.related_human_skill | join: "," | split: "," %}
+      {% assign paired_skills = "" | split: "," %}
+      {% for slug in related_slugs %}
+        {% assign match = site.human_skills | where: "slug", slug | first %}
+        {% if match %}{% assign paired_skills = paired_skills | push: match %}{% endif %}
+      {% endfor %}
+      {% if paired_skills.size > 0 %}
       <div class="marginalia__item">
-        <span class="marginalia__label">Companion skill</span>
-        <span class="marginalia__value"><a class="marginalia__companion" href="{{ paired.url | relative_url }}">{{ paired.title }}</a></span>
+        <span class="marginalia__label">{% if paired_skills.size > 1 %}Companion skills{% else %}Companion skill{% endif %}</span>
+        <span class="marginalia__value">
+          {% for paired in paired_skills %}<a class="marginalia__companion" href="{{ paired.url | relative_url }}">{{ paired.title }}</a>{% unless forloop.last %}<br>{% endunless %}{% endfor %}
+        </span>
       </div>
       {% endif %}
     {% endif %}
