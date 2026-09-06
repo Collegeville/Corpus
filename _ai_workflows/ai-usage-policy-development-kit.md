@@ -53,14 +53,15 @@ enough to actually do, unlike "I'll be transparent about it," which isn't a prac
 
 ## Common Pitfalls
 
-- Answering all five questions with some version of "I'll be honest / careful / responsible" —
-  none of that is a policy, it's a value statement with no practice attached.
-- Setting boundaries so vague they'd never actually stop you in the moment ("I won't overuse
-  it").
-- Treating verification as a one-time check rather than a repeatable practice you'd apply to
-  every piece of AI-assisted work.
-- Writing the policy once and never revisiting it as tools, coursework, or your own judgment
-  change.
+- **Answering all five questions with some version of "I'll be honest / careful /
+  responsible"** — none of that is a policy, it's a value statement with no practice
+  attached.
+- **Setting boundaries so vague they'd never actually stop you in the moment** ("I won't
+  overuse it").
+- **Treating verification as a one-time check** rather than a repeatable practice you'd
+  apply to every piece of AI-assisted work.
+- **Writing the policy once and never revisiting it** as tools, coursework, or your own
+  judgment change.
 
 ## Checklist
 

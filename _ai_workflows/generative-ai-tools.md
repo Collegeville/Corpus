@@ -66,14 +66,16 @@ working, understood script built in a fraction of the time cold research would h
 
 ## Common Pitfalls
 
-- Asking a vague question and getting a vague, generically-applicable answer — persona, context,
-  and task specificity matters.
-- Running generated code without asking about the parts you don't understand, so nothing is
-  actually learned in the process.
-- Treating a first working example as finished rather than as something to test and extend.
-- Assuming AI-assisted drafting or scripting removes the need to demonstrate real understanding
-  — the check on this isn't a stricter AI policy, it's being able to hold your own in a
-  [Level of Expertise Dialogue]({{ '/human-skills/level-of-expertise-dialogue/' | relative_url }}) afterward.
+- **Asking a vague question and getting a vague, generically-applicable answer** — persona,
+  context, and task specificity matters.
+- **Running generated code without asking about the parts you don't understand**, so nothing
+  is actually learned in the process.
+- **Treating a first working example as finished** rather than as something to test and
+  extend.
+- **Assuming AI-assisted drafting or scripting removes the need to demonstrate real
+  understanding** — the check on this isn't a stricter AI policy, it's being able to hold
+  your own in a [Level of Expertise Dialogue]({{
+  '/human-skills/level-of-expertise-dialogue/' | relative_url }}) afterward.
 
 ## Checklist
 

@@ -68,15 +68,15 @@ actually do next.
 
 ## Common Pitfalls
 
-- Skipping the summary — without it, the author can't tell whether you understood the piece,
-  and can't trust the rest of your feedback.
-- Naming a weakness without reframing it as something actionable — "this section is weak" helps
-  no one; "this section would be stronger if it addressed X" does.
-- Reviewing only at the sentence level (grammar, wording) while ignoring story integrity —
-  or the reverse, commenting only on structure while ignoring whether the technical content is
-  actually sound.
-- Vague praise or vague criticism that doesn't map to any of the four rubric dimensions —
-  "good job" and "needs work" aren't reviews.
+- **Skipping the summary** — without it, the author can't tell whether you understood the
+  piece, and can't trust the rest of your feedback.
+- **Naming a weakness without reframing it as something actionable** — "this section is
+  weak" helps no one; "this section would be stronger if it addressed X" does.
+- **Reviewing only at the sentence level** (grammar, wording) while ignoring story integrity
+  — or the reverse, commenting only on structure while ignoring whether the technical
+  content is actually sound.
+- **Vague praise or vague criticism** that doesn't map to any of the four rubric dimensions
+  — "good job" and "needs work" aren't reviews.
 
 ## Rubric / Checklist
 

@@ -66,14 +66,15 @@ why.
 
 ## Common Pitfalls
 
-- Treating "I have no opinion" as not worth saying — silence is often mistaken for agreement.
-- Debating a technical point for a while before realizing both sides actually meant different
-  things by the same term.
-- One or two people dominating, with quieter participants never actually weighing in.
-- Reaching a decision in the room and never writing it down — three weeks later, no one
+- **Treating "I have no opinion" as not worth saying** — silence is often mistaken for
+  agreement.
+- **Debating a technical point for a while** before realizing both sides actually meant
+  different things by the same term.
+- **One or two people dominating**, with quieter participants never actually weighing in.
+- **Reaching a decision in the room and never writing it down** — three weeks later, no one
   remembers exactly what was agreed or why.
-- Treating "supporting a good idea that isn't mine" as a loss, rather than as the actual goal of
-  the discussion.
+- **Treating "supporting a good idea that isn't mine" as a loss**, rather than as the actual
+  goal of the discussion.
 
 ## Rubric / Checklist
 

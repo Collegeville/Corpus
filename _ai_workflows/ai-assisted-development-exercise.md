@@ -62,14 +62,14 @@ because the benchmark's checkable.
 
 ## Common Pitfalls
 
-- Running too few trials to get a stable estimate — a win rate from 20 games is much noisier
-  than one from 1000.
-- Reporting only whether the tool "worked," without the specific detail (what needed a
+- **Running too few trials to get a stable estimate** — a win rate from 20 games is much
+  noisier than one from 1000.
+- **Reporting only whether the tool "worked,"** without the specific detail (what needed a
   follow-up, what it got right immediately) that actually builds calibrated judgment.
-- Treating an implausible result as acceptable rather than as a signal to debug the
+- **Treating an implausible result as acceptable** rather than as a signal to debug the
   implementation.
-- Skipping ahead to using an AI tool on the real project without ever having exercised it on
-  something checkable first.
+- **Skipping ahead to using an AI tool on the real project** without ever having exercised
+  it on something checkable first.
 
 ## Checklist
 

@@ -54,15 +54,15 @@ when someone asks "what got you started on this?"
 
 ## Common Pitfalls
 
-- Preparing and memorizing an answer to question 1 as if it were a script — a genuine dialogue
-  will move past a rehearsed pitch within the first follow-up question.
-- Being able to describe *what* was built (architecture, question 4) but not *why* choices were
-  made — the dialogue format is meant to surface reasoning, not just facts.
-- Treating question 5 as a formality — being unable to name any actual person or source that
-  shaped your understanding is a sign the work wasn't grounded in the field's actual
+- **Preparing and memorizing an answer to question 1** as if it were a script — a genuine
+  dialogue will move past a rehearsed pitch within the first follow-up question.
+- **Being able to describe *what* was built** (architecture, question 4) but not *why*
+  choices were made — the dialogue format is meant to surface reasoning, not just facts.
+- **Treating question 5 as a formality** — being unable to name any actual person or source
+  that shaped your understanding is a sign the work wasn't grounded in the field's actual
   conversation.
-- Reaching for notes when a question gets hard — the entire value of the format is testing what
-  you can say without them.
+- **Reaching for notes when a question gets hard** — the entire value of the format is
+  testing what you can say without them.
 
 ## Rubric / Checklist
 

@@ -70,14 +70,14 @@ specific content changes.
 
 ## Common Pitfalls
 
-- Skipping the tiering — writing a single flat document forces every reader through the same
-  depth, defeating the format's purpose.
-- An executive summary that doesn't actually match the full presentation's recommendations,
-  so a skimming reader walks away with the wrong takeaway.
-- A "full presentation" that argues in prose rather than point by point, making it hard to
-  follow which risk goes with which recommendation.
-- Omitting risks and requirements — an argument for change that doesn't acknowledge cost or
-  risk reads as unconvincing, not persuasive.
+- **Skipping the tiering** — writing a single flat document forces every reader through the
+  same depth, defeating the format's purpose.
+- **An executive summary that doesn't actually match the full presentation's
+  recommendations**, so a skimming reader walks away with the wrong takeaway.
+- **A "full presentation" that argues in prose** rather than point by point, making it hard
+  to follow which risk goes with which recommendation.
+- **Omitting risks and requirements** — an argument for change that doesn't acknowledge cost
+  or risk reads as unconvincing, not persuasive.
 
 ## Rubric / Checklist
 

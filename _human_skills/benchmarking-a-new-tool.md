@@ -54,14 +54,14 @@ use what you learn to calibrate how much you trust the tool on the real thing.
 
 ## Common Pitfalls
 
-- Choosing a "benchmark" that's actually just a small version of the real project — it should be
-  unrelated enough that a bad result doesn't cost you anything real.
-- Skipping the checkable-answer property — a benchmark you can't evaluate objectively doesn't
-  build real judgment, just a vague impression.
-- Running the benchmark so late that there's no time left to change course if the tool turns out
-  to be a poor fit.
-- Treating a single run as conclusive — the value comes from actually using the tool enough to
-  notice its failure modes, not from getting one lucky result.
+- **Choosing a "benchmark" that's actually just a small version** of the real project — it
+  should be unrelated enough that a bad result doesn't cost you anything real.
+- **Skipping the checkable-answer property** — a benchmark you can't evaluate objectively
+  doesn't build real judgment, just a vague impression.
+- **Running the benchmark so late** that there's no time left to change course if the tool
+  turns out to be a poor fit.
+- **Treating a single run as conclusive** — the value comes from actually using the tool
+  enough to notice its failure modes, not from getting one lucky result.
 
 ## Rubric / Checklist
 

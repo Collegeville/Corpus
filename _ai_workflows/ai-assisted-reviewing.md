@@ -59,14 +59,14 @@ three required parts.
 
 ## Common Pitfalls
 
-- Submitting an AI-generated review unread, skipping the "assess the quality of the AI review"
-  step entirely.
-- Treating the AI's rubric scores as objective rather than as a first pass to be checked against
-  the actual text.
-- Not separating the three required parts (AI content / your assessment / your modified review)
-  — collapsing them loses the record of what you actually contributed.
-- Using AI review output to avoid engaging with the piece, rather than to accelerate a first
-  pass before you engage with it directly.
+- **Submitting an AI-generated review unread**, skipping the "assess the quality of the AI
+  review" step entirely.
+- **Treating the AI's rubric scores as objective** rather than as a first pass to be checked
+  against the actual text.
+- **Not separating the three required parts** (AI content / your assessment / your modified
+  review) — collapsing them loses the record of what you actually contributed.
+- **Using AI review output to avoid engaging with the piece**, rather than to accelerate a
+  first pass before you engage with it directly.
 
 ## Checklist
 
