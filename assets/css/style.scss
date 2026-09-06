@@ -328,9 +328,6 @@ pre {
   color: var(--color-gold);
   font-weight: 600;
 }
-.marginalia a.marginalia__source {
-  color: var(--color-muted);
-}
 
 @media (max-width: 64rem) {
   .skill-layout { grid-template-columns: 1fr; }
