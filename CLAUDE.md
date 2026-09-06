@@ -40,8 +40,8 @@ edits required for nav/index inclusion):
 - `_human_skills/` → `/human-skills/` — uses `skill.html` layout.
 - `_ai_workflows/` → `/ai-workflows/` — uses `skill.html` layout.
 - `_agent_skills/` → `/agent-skills/` — uses `skill.html` layout (collection
-  entry only; the actual downloadable file lives separately under
-  `assets/agent-skills/<slug>/SKILL.md`).
+  entry only; the actual skill lives separately under
+  `assets/agent-skills/<slug>/SKILL.md`, downloaded as `<slug>.zip`).
 
 `_layouts/skill.html` is shared by all three skill-like collections and
 renders the cross-link "marginalia" sidebar (category, tags, and the
@@ -66,13 +66,20 @@ Structure → Worked Example → Common Pitfalls → Rubric / Checklist) — see
 README.md's "Adding a Human Skill" section for the full front matter shape
 and an example file to copy from. AI-Assisted Workflow pages additionally
 carry a visible "last verified" / "as of" note since they're expected to go
-stale, unlike Human Skills. Agent Skills split into two files that must be
-added together: the downloadable `assets/agent-skills/<slug>/SKILL.md`
-(fully self-contained — any cross-reference to a Human Skill must be a full
+stale, unlike Human Skills. Agent Skills split into three pieces that must
+be added/updated together: the skill file itself at
+`assets/agent-skills/<slug>/SKILL.md` (fully self-contained — any
+cross-reference to a Human Skill must be a full
 `https://collegeville.github.io/Corpus/...` URL since the file travels
-without the repo) and the `_agent_skills/<slug>.md` collection entry
-(human-facing description + download link, repo-relative links are fine
-here).
+without the repo), the `<slug>.zip` alongside it that `scripts/
+build_agent_skill_zips.py` builds and that the download link actually
+points to (SKILL.md carries its own YAML front matter for the Claude
+Skills format, which Jekyll would otherwise mistake for page front
+matter and mangle — zipping it sidesteps that and unzips back into the
+exact `<slug>/SKILL.md` layout an agent's skills folder expects), and the
+`_agent_skills/<slug>.md` collection entry (human-facing description +
+download link, repo-relative links are fine here). `scripts/audit.py`
+flags a missing or stale zip.
 
 **Styling.** All design tokens (palette, type) are CSS custom properties at
 the top of `assets/css/style.scss` — change values there, not scattered

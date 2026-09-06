@@ -38,7 +38,9 @@ structure, scope, and delivery readiness).
 
 ## Download
 
-- <a class="skill-download" download="SKILL.md" href="https://raw.githubusercontent.com/Collegeville/Corpus/main/assets/agent-skills/deck-and-delivery-review/SKILL.md">Download the skill file</a>
+- [Download the skill file (.zip)]({{ '/assets/agent-skills/deck-and-delivery-review/deck-and-delivery-review.zip' | relative_url }}) —
+  unzip it and drop the resulting `deck-and-delivery-review/` folder straight into your agent's
+  skills directory.
 
 ## Notes and limitations
 
