@@ -7,6 +7,8 @@ and basic Liquid tag balance in layouts/includes.
 import re, sys, yaml
 from pathlib import Path
 
+from agent_skill_zip import build_zip_bytes
+
 ROOT = Path(__file__).resolve().parent.parent
 ISSUES = []
 WARNINGS = []
@@ -109,6 +111,29 @@ for coll in SKILL_COLLECTIONS:
                 for v in vals:
                     if v not in docs[target_coll]:
                         log_issue(f"{f}: {field}: '{v}' does not match any slug/filename in {target_coll}")
+
+# --- Agent Skill downloadable zip: present and in sync with its source ----
+# The download link on each Agent Skill page points at a committed .zip
+# (see scripts/build_agent_skill_zips.py), not the source SKILL.md directly
+# — Jekyll would otherwise mistake SKILL.md's own front matter for page
+# front matter. Rebuild the zip in-memory the same way and compare bytes,
+# so an edit to SKILL.md without a rebuild+commit of the zip gets caught.
+AGENT_SKILLS_ASSET_DIR = ROOT / "assets" / "agent-skills"
+for filename_base, (f, fm, body) in docs["agent_skills"].items():
+    slug = fm.get("slug") or filename_base
+    skill_dir = AGENT_SKILLS_ASSET_DIR / slug
+    skill_md = skill_dir / "SKILL.md"
+    zip_path = skill_dir / f"{slug}.zip"
+    if not skill_md.exists():
+        log_issue(f"{f}: no assets/agent-skills/{slug}/SKILL.md found")
+        continue
+    if not zip_path.exists():
+        log_issue(f"{f}: assets/agent-skills/{slug}/{slug}.zip is missing — "
+                  f"run scripts/build_agent_skill_zips.py and commit the result")
+        continue
+    if zip_path.read_bytes() != build_zip_bytes(skill_dir, slug):
+        log_issue(f"{f}: assets/agent-skills/{slug}/{slug}.zip is stale relative to its source files — "
+                  f"run scripts/build_agent_skill_zips.py and commit the result")
 
 # --- Internal markdown links: /human-skills/x/, /ai-workflows/x/, /agent-skills/x/, /about-corpus/x/ ---
 # Matches both bare root-relative links (a bug, since they ignore baseurl) and

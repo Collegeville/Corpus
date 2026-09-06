@@ -41,7 +41,9 @@ matches the full presentation, every component has all four parts, risks aren't 
 
 ## Download
 
-- <a class="skill-download" download="SKILL.md" href="https://raw.githubusercontent.com/Collegeville/Corpus/main/assets/agent-skills/position-paper-grill/SKILL.md">Download the skill file</a>
+- [Download the skill file (.zip)]({{ '/assets/agent-skills/position-paper-grill/position-paper-grill.zip' | relative_url }}) —
+  unzip it and drop the resulting `position-paper-grill/` folder straight into your agent's
+  skills directory.
 
 ## Notes and limitations
 

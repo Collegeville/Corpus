@@ -101,7 +101,8 @@ assets/examples/         functional resources a Human Skill page depends on
                           LaTeX worked example), mirrored locally rather than
                           linked out to an external repo so the page keeps
                           working if that repo is later reorganized or removed
-assets/agent-skills/     downloadable SKILL.md files, one per Agent Skills
+assets/agent-skills/     one SKILL.md + its downloadable <slug>.zip (built by
+                          scripts/build_agent_skill_zips.py) per Agent Skills
                           entry (e.g. assets/agent-skills/position-paper-grill/)
 _about_corpus/          About Corpus section pages (collection)
 _human_skills/          Human Skills (collection)
@@ -175,16 +176,24 @@ periodic refreshing, unlike Human Skills.
 
 ## Adding an Agent Skill
 
-Two things go in together: the collection entry and the downloadable file
-itself.
+Three things go in together: the skill file, its downloadable zip, and the
+collection entry.
 
 1. Add the actual skill file at `assets/agent-skills/<slug>/SKILL.md`. This
-   is the file a person downloads and hands to an agent, so it needs to be
-   fully self-contained — any internal cross-reference to a Human Skill page
-   should be a full `https://collegeville.github.io/Corpus/...` URL, not a
-   repo-relative path, since the file no longer lives next to the repo once
-   it's downloaded.
-2. Add a collection entry in `_agent_skills/<slug>.md` describing what the
+   is the file an agent reads, so it needs to be fully self-contained — any
+   internal cross-reference to a Human Skill page should be a full
+   `https://collegeville.github.io/Corpus/...` URL, not a repo-relative
+   path, since the file no longer lives next to the repo once it's
+   downloaded.
+2. Run `python3 scripts/build_agent_skill_zips.py` and commit the
+   `assets/agent-skills/<slug>/<slug>.zip` it writes alongside SKILL.md.
+   This is what the download link actually points to — Jekyll would
+   otherwise mistake SKILL.md's own front matter for page front matter and
+   mangle it (see `_config.yml`'s `exclude:` comment); a zip sidesteps that
+   entirely and unzips back into the exact `<slug>/SKILL.md` layout an
+   agent's skills folder expects. Re-run this script (and re-commit the
+   zip) any time SKILL.md changes — `scripts/audit.py` flags a stale one.
+3. Add a collection entry in `_agent_skills/<slug>.md` describing what the
    skill does and linking the download, with `related_human_skill: <slug>`
    if it pairs with one:
 
@@ -197,6 +206,13 @@ summary: One sentence, shown on the index card and in <meta description>.
 related_human_skill: my-skill-slug   # optional, must match a Human Skill's `slug`
 slug: my-agent-skill                 # used for cross-linking
 ---
+```
+
+The download link in the body should point at the zip, not the raw
+`SKILL.md`:
+
+```liquid
+[Download the skill file (.zip)]({{ '/assets/agent-skills/my-agent-skill/my-agent-skill.zip' | relative_url }})
 ```
 
 See `_agent_skills/position-paper-grill.md` and
