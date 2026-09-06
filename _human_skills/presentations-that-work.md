@@ -18,6 +18,10 @@ but entertainment is never a substitute for solid technical content underneath i
 speaking skills open career opportunities in a way that's easy to underrate until you're five
 years into a job and want to try something new.
 
+This skill covers structure, scope, and delivery readiness at the planning level. For the
+mechanics of delivering it live — voice, slide craft, and stage presence — see
+[Tell It Well]({{ '/human-skills/tell-it-well/' | relative_url }}).
+
 ## Learning Outcome
 
 After using this technique, you should be able to structure and deliver a technical talk that

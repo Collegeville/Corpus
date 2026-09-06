@@ -10,7 +10,7 @@ behind that split.
 
 ## Status
 
-**The site is content-complete.** All 8 About Corpus pages, all 16 Human
+**The site is content-complete.** All 8 About Corpus pages, all 17 Human
 Skills, all 5 AI-Assisted Workflows, and the first Agent Skill are fully
 written — site structure, navigation, styling, and content are all in
 place.
@@ -19,12 +19,12 @@ place.
 Half-Life, ReVeaL, Dialogue and Community, Self-Assessment, AI as
 Collaborator.
 
-*Human Skills (16):* Scoping a Thesis Statement, Captions That Work,
+*Human Skills (17):* Scoping a Thesis Statement, Captions That Work,
 Effective Reviews, Position Papers, Titles and Abstracts That Work, Using
 LaTeX, Predictions That Work, Retrospectives, Effective Mental Models,
 Discussions That Work, Presentations That Work, Better Technical Writing,
 Level of Expertise Dialogue, Knowledge Half-Life, Slides That Work,
-Benchmarking a New Tool.
+Benchmarking a New Tool, Tell It Well.
 
 *AI-Assisted Workflows (5):* AI-Assisted Reviewing, AI-Assisted Abstract
 Drafting, Generative AI Tools, AI-Assisted Development Exercise, AI Usage
