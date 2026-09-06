@@ -3,7 +3,7 @@ title: Tell It Well
 category: Presenting
 tags: [presenting, delivery, public-speaking]
 summary: Delivery coaching for any technical talk — scope, slide craft, voice mechanics, and confidence — refined through low-stakes hobby talks early in the semester.
-related_human_skill: presentations-that-work
+related_human_skill: [presentations-that-work, slides-that-work]
 slug: tell-it-well
 ---
 

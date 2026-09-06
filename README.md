@@ -137,6 +137,10 @@ related_ai_workflow: my-workflow-slug                          # optional, must 
                                                                  # an AI-Assisted Workflow's `slug`
 related_agent_skill: my-agent-skill-slug                       # optional, must match
                                                                  # an Agent Skill's `slug`
+related_human_skill: my-companion-slug                         # optional, must match another
+                                                                 # Human Skill's `slug` — a single
+                                                                 # slug or a YAML list of several,
+                                                                 # e.g. [a-slug, b-slug]
 slug: my-skill                                                 # used for cross-linking
 ---
 ```
