@@ -232,8 +232,8 @@ index page. Layout and section label are applied automatically via
 
 Palette and type are defined as CSS custom properties at the top of
 `assets/css/style.scss` — change values there, not throughout the
-stylesheet. The palette leans on CSB/SJU navy as the primary accent and a
-muted vellum gold as a secondary accent (used for the "AI-Assisted Workflow" /
+stylesheet. The palette leans on CSB/SJU navy as the primary accent and
+copper as a secondary accent (used for the "AI-Assisted Workflow" /
 "Agent Skill" / "Companion skill" cross-link chips), against a warm paper
 background — a quiet, restrained nod to the Benedictine/manuscript
 setting rather than a literal one.

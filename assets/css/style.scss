@@ -2,7 +2,8 @@
 ---
 /* ==========================================================================
    Corpus — design tokens
-   Palette: warm manuscript paper + CSB/SJU navy + a muted vellum gold,
+   Palette: warm manuscript paper + CSB/SJU navy + the copper accent shared
+   with the parent Collegeville site,
    quietly nodding to the Benedictine/scriptorium setting without leaning on
    it. Documentation-site structure: persistent sidebar nav, generous
    whitespace, clear heading hierarchy.
@@ -17,7 +18,10 @@
   --color-muted:      #6B6F76; /* secondary text, captions, metadata */
   --color-navy:       #263959; /* CSB/SJU navy — primary accent */
   --color-navy-deep:  #182338; /* hover/active states */
-  --color-gold:       #A9812F; /* muted vellum gold — secondary accent */
+  --color-copper:     #A44E25; /* secondary accent, shared with Collegeville */
+  --color-pine-deep:  #163A2F; /* family bar only, matches Collegeville */
+  --color-on-pine:    #F4F5EE;
+  --color-on-pine-muted: #CBD8D1;
   --color-rule:       #DEDBD2; /* hairline borders */
   --color-rule-soft:  #EDEBE4;
 
@@ -60,7 +64,7 @@ a {
 a:hover { color: var(--color-navy-deep); }
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--color-gold);
+  outline: 2px solid var(--color-copper);
   outline-offset: 2px;
 }
 
@@ -93,7 +97,7 @@ h2 {
 }
 h2::before {
   content: "\00B6\00A0";
-  color: var(--color-gold);
+  color: var(--color-copper);
   font-style: normal;
 }
 h3 { font-size: 1.15rem; margin-top: 2em; }
@@ -110,11 +114,37 @@ pre {
   overflow-x: auto;
 }
 
+/* Family bar: ties Corpus to the parent Collegeville site. Same color and
+   type as the top bar on collegeville.github.io. */
+.family-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.1rem 1.5rem;
+  background: var(--color-pine-deep);
+  padding: 0.55rem 1.5rem;
+}
+.family-bar a {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-on-pine);
+  text-decoration: none;
+}
+.family-bar a:hover { text-decoration: underline; }
+.family-bar span {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-on-pine-muted);
+}
+
 /* Layout shell --------------------------------------------------------- */
 .site {
   display: grid;
   grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
-  min-height: 100vh;
+  min-height: calc(100vh - 2.75rem); /* leaves room for the family bar */
 }
 
 .sidebar {
@@ -174,7 +204,7 @@ pre {
 }
 .sidebar nav a.is-active {
   color: var(--color-navy);
-  border-left-color: var(--color-gold);
+  border-left-color: var(--color-copper);
   background: var(--color-margin);
   font-weight: 600;
 }
@@ -218,7 +248,7 @@ pre {
 }
 .sidebar__nav-toggle > summary::after {
   content: "\25BE"; /* ▾ */
-  color: var(--color-gold);
+  color: var(--color-copper);
 }
 .sidebar__nav-toggle[open] > summary {
   border-bottom: none;
@@ -275,9 +305,9 @@ pre {
   border-color: var(--color-navy);
   color: var(--color-navy);
 }
-.chip--gold {
-  border-color: var(--color-gold);
-  color: var(--color-gold);
+.chip--copper {
+  border-color: var(--color-copper);
+  color: var(--color-copper);
 }
 
 /* Signature element: the marginalia rail --------------------------------
@@ -325,7 +355,7 @@ pre {
   gap: 0.35rem;
 }
 .marginalia a.marginalia__companion {
-  color: var(--color-gold);
+  color: var(--color-copper);
   font-weight: 600;
 }
 
@@ -375,7 +405,7 @@ pre {
 
 /* Homepage-only featured callout — the one place this site points a
    first-time visitor at something before the page has explained itself.
-   Deliberately distinct from .card: full-width, a gold left rule like a
+   Deliberately distinct from .card: full-width, a copper left rule like a
    marginal annotation, sits above the intro paragraph rather than beside
    its peers in the card grid. Links off-site (maherou.github.io), so it
    carries an explicit external-link cue. */
@@ -384,14 +414,14 @@ pre {
   display: block;
   background: var(--color-margin);
   border: 1px solid var(--color-rule);
-  border-left: 4px solid var(--color-gold);
+  border-left: 4px solid var(--color-copper);
   border-radius: var(--radius);
   padding: 1.5rem 1.75rem;
   margin: 0 0 2.5rem;
 }
 .featured-callout:hover {
   border-color: var(--color-navy);
-  border-left-color: var(--color-gold);
+  border-left-color: var(--color-copper);
   background: var(--color-surface);
 }
 .featured-callout__eyebrow {
@@ -399,7 +429,7 @@ pre {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--color-gold);
+  color: var(--color-copper);
   margin-bottom: 0.4rem;
 }
 .featured-callout__title {
@@ -488,7 +518,7 @@ pre {
   margin: 1rem 0;
 }
 .search-input:focus-visible {
-  outline: 2px solid var(--color-gold);
+  outline: 2px solid var(--color-copper);
   outline-offset: 2px;
   border-color: var(--color-navy);
 }

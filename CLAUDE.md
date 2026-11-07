@@ -83,7 +83,7 @@ flags a missing or stale zip.
 
 **Styling.** All design tokens (palette, type) are CSS custom properties at
 the top of `assets/css/style.scss` — change values there, not scattered
-through the stylesheet. Palette: CSB/SJU navy primary, muted vellum gold
+through the stylesheet. Palette: CSB/SJU navy primary, copper
 secondary (used for the workflow/skill/companion cross-link chips), warm
 paper background.
 
