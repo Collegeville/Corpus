@@ -67,9 +67,13 @@ by a real student (Emily Hed, on the limits of SHAP model explanations) showing 
 filled in:
 
 - [Poster-format template]({{ '/assets/examples/poster-presentations/CSCI373-Poster-Template.pptx' | relative_url }})
+  ([View PDF]({{ '/assets/examples/poster-presentations/CSCI373-Poster-Template.pdf' | relative_url }}))
 - [On-screen-format template]({{ '/assets/examples/poster-presentations/CSCI373-OnScreen-Template.pptx' | relative_url }})
+  ([View PDF]({{ '/assets/examples/poster-presentations/CSCI373-OnScreen-Template.pdf' | relative_url }}))
 - [Worked example — poster format]({{ '/assets/examples/poster-presentations/Hed-SHAP-Poster.pptx' | relative_url }})
+  ([View PDF]({{ '/assets/examples/poster-presentations/Hed-SHAP-Poster.pdf' | relative_url }}))
 - [Worked example — on-screen format]({{ '/assets/examples/poster-presentations/Hed-SHAP-OnScreen.pptx' | relative_url }})
+  ([View PDF]({{ '/assets/examples/poster-presentations/Hed-SHAP-OnScreen.pdf' | relative_url }}))
 - [Download the complete kit as a zip]({{ '/assets/examples/poster-presentations/poster-presentations-kit.zip' | relative_url }})
 
 The worked example follows the panel sequence exactly. **Takeaway:** "SHAP exposed a pattern my
