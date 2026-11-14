@@ -91,3 +91,7 @@ paper background.
 depend on (e.g. the Using LaTeX worked example) locally in-repo rather than
 linking to an external repo, so pages keep working if that source is
 reorganized or removed.
+
+## Licenses and images
+
+Code is MIT and all other content is CC BY 4.0, both © Michael A. Heroux (see `LICENSE` and `LICENSE-CONTENT`). Follow the image policy in `README.md`: no photos or likenesses of real people other than Michael, and only images created with Claude.

@@ -64,7 +64,8 @@ order stay identical; only the layout reflows to fit the medium and viewing dist
 
 The CSCI 373 poster kit provides blank templates in both formats, plus a complete worked example
 by a real student (Emily Hed, on the limits of SHAP model explanations) showing every panel
-filled in:
+filled in. The worked example is Emily Hed's own work. Corpus claims no copyright in it, and it is
+not covered by Corpus's licenses.
 
 - [Poster-format template]({{ '/assets/examples/poster-presentations/CSCI373-Poster-Template.pptx' | relative_url }})
   ([View PDF]({{ '/assets/examples/poster-presentations/CSCI373-Poster-Template.pdf' | relative_url }}))

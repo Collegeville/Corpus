@@ -1,0 +1,10 @@
+Copyright notice for this folder
+
+Hed-SHAP-Poster.pptx, Hed-SHAP-Poster.pdf, Hed-SHAP-OnScreen.pptx and
+Hed-SHAP-OnScreen.pdf, and the copies of them inside
+poster-presentations-kit.zip, are the work of student Emily Hed.
+Michael A. Heroux claims no copyright in them, and they are not covered by
+this repository's MIT or CC BY 4.0 licenses.
+
+The blank CSCI 373 templates in this folder are under the repository's
+licenses (see LICENSE and LICENSE-CONTENT at the top of the repository).
