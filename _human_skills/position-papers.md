@@ -68,6 +68,18 @@ That four-part pattern — status, recommendation, discussion, risk — repeats 
 the full presentation, giving the reader the same structure to follow throughout, even as the
 specific content changes.
 
+**Real position papers.** Two published Sandia reports show the format at work.
+[*Expanding the Trilinos Developer Community*](https://www.osti.gov/servlets/purl/1008113)
+(Heroux, SAND2010-6890, 2010) argues that Trilinos, by then over 55 packages with users
+worldwide, needed explicit policies, procedures, tools, and infrastructure to make external
+developers "first-class citizens" rather than working with them ad hoc, while keeping Sandia's
+leadership role. [*Toward a Compatible Reproducibility Taxonomy for Computational and Computing
+Sciences*](https://www.osti.gov/servlets/purl/1481626) (Heroux, Barba, Parashar, Stodden, and
+Taufer, SAND2018-11186, 2018) points out that computational science and the ACM had adopted
+essentially opposite definitions of *reproducible* and *replicable*, and proposes a path to a
+taxonomy both communities can share. The first makes the case for change inside one project; the
+second asks two research communities to agree on shared terms.
+
 ## Common Pitfalls
 
 - **Skipping the tiering** — writing a single flat document forces every reader through the
