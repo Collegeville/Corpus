@@ -1,6 +1,17 @@
-<!-- Links back to the parent site. Matches the top bar on
-     collegeville.github.io, which is why this is always pine, not navy. -->
-<div class="family-bar">
-  <a href="https://collegeville.github.io/">Collegeville</a>
-  <span>Research Software Science</span>
-</div>
+<!-- A copy of the top bar on collegeville.github.io (_includes/topbar.html there).
+     Keep the two in step: same tagline, links, order, and look. -->
+<header class="family-bar">
+  <div class="family-bar__inner">
+    <div class="family-bar__id">
+      <a class="family-bar__brand" href="https://collegeville.github.io/">Collegeville</a>
+      <span>Learning and Working as Computing Advances</span>
+    </div>
+    <nav aria-label="Collegeville">
+      <a href="https://collegeville.github.io/tools/">Tools</a>
+      <a href="{{ '/' | relative_url }}" aria-current="page">Corpus</a>
+      <a href="https://collegeville.github.io/archive/">Archive</a>
+      <span class="family-bar__sep" aria-hidden="true"></span>
+      <a class="family-bar__games" href="https://collegeville.github.io/games/">Games</a>
+    </nav>
+  </div>
+</header>

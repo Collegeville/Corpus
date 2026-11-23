@@ -22,6 +22,7 @@
   --color-pine-deep:  #163A2F; /* family bar only, matches Collegeville */
   --color-on-pine:    #F4F5EE;
   --color-on-pine-muted: #CBD8D1;
+  --color-copper-light: #F0B48F; /* copper on pine, family bar only, matches Collegeville */
   --color-rule:       #DEDBD2; /* hairline borders */
   --color-rule-soft:  #EDEBE4;
 
@@ -116,35 +117,65 @@ pre {
 
 /* Family bar: ties Corpus to the parent Collegeville site. Same color and
    type as the top bar on collegeville.github.io. */
-.family-bar {
+/* Copies .topbar on collegeville.github.io value for value; keep in step. */
+.family-bar { background: var(--color-pine-deep); color: var(--color-on-pine); }
+.family-bar__inner {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0.9rem 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
-  gap: 0.1rem 1.5rem;
-  background: var(--color-pine-deep);
-  padding: 0.55rem 1.5rem;
+  gap: 0.25rem 1.5rem;
 }
-.family-bar a {
+.family-bar__brand {
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 600;
-  color: var(--color-on-pine);
+  line-height: 1.2;
+  color: inherit;
   text-decoration: none;
 }
-.family-bar a:hover { text-decoration: underline; }
-.family-bar span {
+.family-bar__id { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.1rem 1rem; }
+.family-bar nav { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 1.25rem; }
+.family-bar nav a {
   font-family: var(--font-ui);
-  font-size: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.65;
+  color: var(--color-on-pine);
+  text-decoration: none;
+  padding-bottom: 0.1rem;
+  border-bottom: 2px solid transparent;
+}
+.family-bar nav .family-bar__games { color: var(--color-copper-light); }
+.family-bar nav a:hover,
+.family-bar nav a[aria-current="page"] { border-bottom-color: var(--color-copper-light); }
+.family-bar a:focus-visible { outline: 2px solid var(--color-copper-light); outline-offset: 2px; }
+.family-bar__sep {
+  align-self: center;
+  width: 1px;
+  height: 0.9rem;
+  background: var(--color-on-pine-muted);
+  opacity: 0.5;
+}
+.family-bar span:not(.family-bar__sep) {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
   font-weight: 500;
+  line-height: 1.4;
   color: var(--color-on-pine-muted);
+}
+@media (max-width: 36rem) {
+  .family-bar__inner { padding: 0.9rem 1rem; }
 }
 
 /* Layout shell --------------------------------------------------------- */
 .site {
   display: grid;
   grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
-  min-height: calc(100vh - 2.75rem); /* leaves room for the family bar */
+  min-height: calc(100vh - 3.4rem); /* leaves room for the family bar */
 }
 
 .sidebar {
