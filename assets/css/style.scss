@@ -137,6 +137,13 @@ pre {
   color: inherit;
   text-decoration: none;
 }
+/* The mark sits beside the name; the name stays on the text baseline. */
+.family-bar__mark {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-right: 0.5rem;
+  vertical-align: -0.45rem;
+}
 .family-bar__id { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.1rem 1rem; }
 .family-bar nav { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 1.25rem; }
 .family-bar nav a {

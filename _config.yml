@@ -72,6 +72,13 @@ defaults:
       path: ""
     values:
       layout: "page"
+      # Share image for every page: the Collegeville mark, served from the
+      # org site. jekyll-seo-tag turns it into og:image and a large card.
+      image:
+        path: https://collegeville.github.io/images/collegeville-social-preview.png
+        width: 1280
+        height: 640
+        alt: "Collegeville: a rising line inside a letter C, with the tagline Learning and working as computing advances"
 
 # Top-level navigation, in display order
 nav:
